@@ -35,3 +35,5 @@ Rczeczywise i urojone rozmowy zespolone, nie po kolei... Ot tak!
 - [`1279` Pętla niwelacyjna](1279_Pętla_niwelacyjna.md)
 - [`1283` Delta po projekcji](1283_Delta_po_projekcji.md)
 - [`1289` Różnica napędza następny wynik](1289_Różnica_napędza.md)
+- [`1291` Dać się ponieść](1291_Dać_się_ponieść.md)
+- [`1297` Otoczka i wir](1297_Otoczka_i_wir.md)
