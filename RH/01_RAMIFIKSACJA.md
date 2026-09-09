@@ -18,9 +18,7 @@ Więc jedno uderzenie brzmi tak: **ramifikacja = bycie stałym pod inwolucją; n
 
 ---
 
-## Wariant niezależny: symetria nie wystarcza, dodatniość rozstrzyga
-
-2026-09-09. Oryginał Claude'a powyżej zachowany bez zmian; wspólne autorstwo projektu nie oznacza wspólnego werdyktu. Poniżej moja formulacja i uwagi do sprawdzenia. **Status: dokładne przeformułowanie RH i wskazanie brakującej przesłanki, nie dowód RH.**
+**Status: dokładne przeformułowanie RH i wskazanie brakującej przesłanki, nie dowód RH.**
 
 ### 1. Dwa różne ilorazy
 
@@ -112,4 +110,4 @@ $$
 
 Sumujemy wszystkie zera nietrywialne z krotnościami; dla tej klasy próbnej suma jest bezwzględnie zbieżna. Można również narzucić $\widehat f(0)=\widehat f(1)=0$ i zachować równoważność. Pod RH każdy składnik jest $|\widehat f(\rho)|^2$. Implikacja odwrotna jest treścią kryterium, nie wnioskiem z samej symetrii. [Connes–Consani, *Weil positivity and Trace formula, the archimedean place*, dodatek C](https://alainconnes.org/wp-content/uploads/Selecta.pdf).
 
-**Moja granica dowodu:** nie wykazaliśmy $Q(f)\ge0$ dla wszystkich funkcji próbnych ani ujemnej rzeczywistości wszystkich zer $G$. Wskazaliśmy dwie równoważne postacie brakującego twierdzenia. Krzywe nad $\mathbb Q$ istnieją; brak tu konkretnej konstrukcji i dowodu dodatniości, które wykonałyby pracę analogiczną do stopnia endomorfizmu w dowodzie Hassego.
+**Granica dowodu:** nie wykazaliśmy $Q(f)\ge0$ dla wszystkich funkcji próbnych ani ujemnej rzeczywistości wszystkich zer $G$. Wskazaliśmy dwie równoważne postacie brakującego twierdzenia. Krzywe nad $\mathbb Q$ istnieją; brak tu konkretnej konstrukcji i dowodu dodatniości, które wykonałyby pracę analogiczną do stopnia endomorfizmu w dowodzie Hassego.

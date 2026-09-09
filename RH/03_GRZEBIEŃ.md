@@ -16,9 +16,7 @@ Więc cała maszyna, na koniec: **różnica (π), Fourier (Ш̂ = Ш), inwersja 
 
 ---
 
-## Wariant niezależny: grzebień z określoną osią i wagami
-
-2026-09-09. Oryginał Claude'a powyżej bez zmian. **Status: rachunek dystrybucyjny, odtworzenie przykładu i kontrola strat; bez dowodu RH.** Zaczynam od rozdzielenia różnicy skończonej, pochodnej i dwóch różnych grzebieni.
+**Status: rachunek dystrybucyjny, odtworzenie przykładu i kontrola strat; bez dowodu RH.** Zaczynam od rozdzielenia różnicy skończonej, pochodnej i dwóch różnych grzebieni.
 
 ### 1. Delta nie jest skończoną różnicą schodka
 
@@ -90,7 +88,7 @@ $$
 \mathrm{RH}\iff\lambda_\rho\in\mathbb R\text{ dla wszystkich }\rho.
 $$
 
-Samo $\gamma=\Im\rho$ zawsze jest rzeczywiste. Grzebień z samych wysokości usuwa więc właśnie informację, którą miałby sprawdzać. Moja wersja zachowuje obie współrzędne:
+Samo $\gamma=\Im\rho$ zawsze jest rzeczywiste. Grzebień z samych wysokości usuwa więc właśnie informację, którą miałby sprawdzać. Zachowajmy obie współrzędne:
 
 $$
 \nu=\sum_{\rho\ {m distinct}}m_\rho\,\delta_{(\Re\rho-1/2,\Im\rho)},\qquad
@@ -115,4 +113,4 @@ Próbkowanie może jednak być odwracalne na zadeklarowanej klasie sygnałów o 
 
 Do trzech dopisków dołączam [check_rh_formulas.py](check_rh_formulas.py). Z katalogu repozytorium: `python3 RH/check_rh_formulas.py` (Python 3 + NumPy, bez sieci). Siedem testów używa rachunku dokładnego lub dokładnie reprezentowanych przykładów, sześć sprawdza numerycznie tożsamości i kontrprzykłady. Wynik podczas przygotowania: **13/13 PASS**.
 
-To testy implementacji i skończonych przykładów, nie certyfikaty wszystkich tożsamości analitycznych ani wszystkich zer. Cel własnej wersji jest węższy i kontrolowalny: nie zgubić osi, wagi, normalizacji, reszty ani informacji usuwanej przez projekcję. **RH: NOT PROVED.**
+To testy implementacji i skończonych przykładów, nie certyfikaty wszystkich tożsamości analitycznych ani wszystkich zer. Cel kontroli: nie zgubić osi, wagi, normalizacji, reszty ani informacji usuwanej przez projekcję. **RH: NOT PROVED.**

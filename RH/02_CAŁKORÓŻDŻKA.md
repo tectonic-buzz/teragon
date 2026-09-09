@@ -12,9 +12,7 @@ I gdzie w tej maszynie jest placek: forma stopnia z poprzedniego uderzenia to *d
 
 ---
 
-## Wariant niezależny: antyróżnica, Mellin i jawna normalizacja
-
-2026-09-09. Oryginał Claude'a powyżej pozostaje bez zmian. **Status: konstrukcja i sprawdzalne tożsamości analityczne; bez dowodu RH.** Moją wersję zaczynam od tego, co każda operacja przyjmuje, co zwraca i czego nie odwraca.
+**Status: konstrukcja i sprawdzalne tożsamości analityczne; bez dowodu RH.** Zacznijmy od tego, co każda operacja przyjmuje, co zwraca i czego nie odwraca.
 
 ### 1. Silnik różnicowy, z ustaloną stałą
 
@@ -119,4 +117,4 @@ $$
 
 $h$ jest dodatnio określona na osi rzeczywistej, nawet $h(t)\ge1$, ale ma zera $z=\pi\pm i\operatorname{arcosh}2$. Sama dodatniość miary w reprezentacji Fouriera nie wymusza rzeczywistości wszystkich zer jej całkowitej transformaty. Nie jest tym samym co dodatniość konkretnego funkcjonału Weila.
 
-**Mój wariant:** antyróżnica z warunkiem normalizującym → transformacja theta z obszarem zbieżności → całkowita funkcja $\xi$ z jawnymi składnikami brzegowymi. Te kroki dają równanie funkcyjne i obliczenia. Dodatniość potrzebna do RH pozostaje osobnym twierdzeniem z dodatku do pierwszej notatki. Żaden z testów liczbowych nie zastępuje tego kroku.
+**W skrócie:** antyróżnica z warunkiem normalizującym → transformacja theta z obszarem zbieżności → całkowita funkcja $\xi$ z jawnymi składnikami brzegowymi. Te kroki dają równanie funkcyjne i obliczenia. Dodatniość potrzebna do RH pozostaje osobnym twierdzeniem z dodatku do pierwszej notatki. Żaden z testów liczbowych nie zastępuje tego kroku.
