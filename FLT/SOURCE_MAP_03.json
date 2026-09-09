@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "source": {
+    "description": "Załączona rozmowa przywołana w pełnym eksporcie; niezależne źródło względem części 01 i 02.",
+    "sha256": "59d78af584d2799269b969f4be2b37cc0e3858149262005883a64b41049fe0e2",
+    "line_numbering": "1-based, inclusive",
+    "window": [
+      51,
+      177
+    ],
+    "conversation_timestamp": null
+  },
+  "transcript_reference": {
+    "sha256": "ab5c2c65fc018ef30b6ba5ace979b1fda9f9158f491aa9fccd1429d08c38344d",
+    "attachment_reference_line": 27026
+  },
+  "output": "03_DIALOG.md",
+  "added_prefix": "# Fermat, nay — świadectwo i Zenon\n\n<!-- source-lines: 51-177; quote-depth-removed: 0 -->\n\n",
+  "assembly": "Append unchanged source lines 51 through 177 to added_prefix, joined with LF and terminated with LF.",
+  "segments": [
+    {
+      "start": 51,
+      "end": 177,
+      "quote_depth_removed": 0
+    }
+  ],
+  "redactions": [],
+  "omissions": [],
+  "selection_boundaries": {
+    "before": "Wiersze 1–50, zagadka o dwóch motylach i poprzedzająca wymiana, pozostawiono do osobnego epizodu na prośbę użytkownika.",
+    "after": "Wiersze 178–181 zawierają tylko końcowy separator i puste wiersze."
+  },
+  "content_policy": "Pełne brzmienie wybranego odcinka bez redakcji, nowych etykiet rozmówców i dopisanych wypowiedzi. Zachowano także wzmianki odsyłające do wcześniejszej rozmowy. Archiwizacja nie stanowi walidacji twierdzeń ani dowodu FLT lub RH."
+}

@@ -2,6 +2,7 @@
 
 1. [Loksodroma, kwadronał i równanie Fermata](01_DIALOG.md): loksodroma → trójkąt prostokątny → zmiana potęgi → kwadronał → zmienna rama → transport dróg i wymierności.
 2. [Równanie kwadratowe, granica i zatrzymanie loksodromy](02_DIALOG.md): Soddy → granice wielomianów → wirująca rama → stożek izotropowy → zeta i Witt → odbicia → dokładne rozpoznanie granicy.
+3. [Fermat, nay — świadectwo i Zenon](03_DIALOG.md): zatrzymanie i dalszy ruch → świadectwo i dowód → wspólne dopełnienie → mijanka → Zenon.
 
 To wyciąg rozmowy, nie nowo napisany dowód. Zachowano kolejność wypowiedzi, wzory, sprostowania i ówczesne nieporozumienia. Nie dopisano odpowiedzi ani nie przeprowadzono tu ponownej walidacji matematycznej. Imion rozmówców nie dodano.
 
@@ -12,6 +13,8 @@ Pierwszy fragment obejmuje wybrane wiersze **19758–20244** pełnego eksportu. 
 [Mapa źródłowa](SOURCE_MAP.json) zawiera SHA-256 całego źródła, numery wierszy, wszystkie pominięcia we wskazanym przedziale i dwie operacje usunięcia wspólnego prefiksu cytowania. Komentarze HTML w dialogu wskazują pochodzenie każdego fragmentu. Pominięto logi narzędzi, komentarze robocze oraz jedno odwołanie do osobnej konstrukcji. Oryginalny plik nie został zmieniony ani skopiowany w całości.
 
 Drugi fragment obejmuje wybrane wiersze **20246–20572**. [Jego mapa źródłowa](SOURCE_MAP_02.json) wskazuje cztery pominięte przedziały z komentarzami roboczymi, logami i znacznikami eksportu. Na prośbę użytkownika przywrócono pełne brzmienie dwóch części zdań i dwóch akapitów, w tym odwołania do odrębnej konstrukcji; tekst pozostaje do własnej redakcji. Nie dopisano wyjaśnień ani nie poprawiono historycznych twierdzeń.
+
+Trzecia część pochodzi z załączonej rozmowy wskazanej w wierszu **27026** eksportu, nie z bezpośredniej kontynuacji części drugiej. Obejmuje bez wycięć wiersze **51–177** załącznika: od „Fermat, nay. I poleci dalej” do zakończenia o Zenonie i „Co złego to nie ja, miłego!”. Wcześniejszą zagadkę o motylach pozostawiono do osobnego epizodu. [Mapa źródłowa](SOURCE_MAP_03.json) identyfikuje oba źródła i granice wyboru.
 
 ## Miejsce powrotu po części pierwszej
 
