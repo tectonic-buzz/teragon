@@ -24,3 +24,4 @@ Rczeczywise i urojone rozmowy zespolone, nie po kolei... Ot tak!
 - [`1049` Szukajka](1049_Szukajka.md)
 - [`1151` Mobius](1151_Mobius.md)
 - [`1153` Butelka Kleina](1153_Butelka_Kleina.md)
+- [`9999987899999` FARI — فری · STWIERDZAM ŻE NIE TWIERDZĘ](../FARI/README.md)

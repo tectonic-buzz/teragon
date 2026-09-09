@@ -111,7 +111,7 @@ Próbkowanie może jednak być odwracalne na zadeklarowanej klasie sygnałów o 
 
 ### Odtwarzalność i granica wyniku
 
-Do trzech dopisków dołączam [check_rh_formulas.py](check_rh_formulas.py). Z katalogu repozytorium: `python3 RH/check_rh_formulas.py` (Python 3 + NumPy, bez sieci). Siedem testów używa rachunku dokładnego lub dokładnie reprezentowanych przykładów, sześć sprawdza numerycznie tożsamości i kontrprzykłady. Wynik podczas przygotowania: **13/13 PASS**.
+Do trzech dopisków dołączam [check_rh_formulas.py](../FARI/tests/check_rh_formulas.py). Z katalogu repozytorium: `python3 FARI/tests/check_rh_formulas.py` (Python 3 + NumPy, bez sieci). Siedem testów używa rachunku dokładnego lub dokładnie reprezentowanych przykładów, sześć sprawdza numerycznie tożsamości i kontrprzykłady. Wynik podczas przygotowania: **13/13 PASS**.
 
 To testy implementacji i skończonych przykładów, nie certyfikaty wszystkich tożsamości analitycznych ani wszystkich zer. Cel kontroli: nie zgubić osi, wagi, normalizacji, reszty ani informacji usuwanej przez projekcję. **RH: NOT PROVED.**
 

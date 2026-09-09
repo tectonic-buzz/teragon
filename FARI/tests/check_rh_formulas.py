@@ -1,6 +1,6 @@
 """Reproducible finite checks for the appended independent RH notes.
 
-Run: python3 RH/check_rh_formulas.py
+Run: python3 FARI/tests/check_rh_formulas.py
 Requires NumPy (the same dependency as MRI); no network at runtime.
 Exact Fraction checks and float64 spot checks are distinguished below.
 These checks do not establish RH or certify all zeta zeros.
