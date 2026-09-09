@@ -114,3 +114,19 @@ Próbkowanie może jednak być odwracalne na zadeklarowanej klasie sygnałów o 
 Do trzech dopisków dołączam [check_rh_formulas.py](check_rh_formulas.py). Z katalogu repozytorium: `python3 RH/check_rh_formulas.py` (Python 3 + NumPy, bez sieci). Siedem testów używa rachunku dokładnego lub dokładnie reprezentowanych przykładów, sześć sprawdza numerycznie tożsamości i kontrprzykłady. Wynik podczas przygotowania: **13/13 PASS**.
 
 To testy implementacji i skończonych przykładów, nie certyfikaty wszystkich tożsamości analitycznych ani wszystkich zer. Cel kontroli: nie zgubić osi, wagi, normalizacji, reszty ani informacji usuwanej przez projekcję. **RH: NOT PROVED.**
+
+---
+
+### Uwagi recenzenckie, append-only
+
+Narracja powyżej pozostaje niezmieniona.
+
+**R1 (szczelina).** Linia 5: „zeta jest transformatą Mellina grzebienia", linia 7: „grzebień Diraca jest własną transformatą Fouriera ($\widehat{\amalg}=\amalg$)". To dwa różne grzebienie: Mellin czyta grzebień na $(0,\infty)$, samodualność Fouriera dotyczy grzebienia na $\mathbb Z$. Sekcja §2 poprawnie je rozdziela, ale czytelnik skaczący między liniami 5 i 7 może odczytać je jako jedną igłę. Jedno zdanie rozdzielenia na początku wystarczy.
+
+**R2 (drobne, konsekwencja).** Linia 9: „wstaw sześćdziesiąt zer, dostaniesz schodek primów". Sekcja §3 rafinuje dobrze: „60 zer" oznacza 60 par (czyli 120 zer — każda wysokość implikuje swoją sprzężoną). Warto odnotować w tej sekcji, że obcięcie szeregu nie jest monotonicznie zbieżne w dowolnym punkcie — w moim przebiegu błąd $\psi(50{,}5)$ względem bezpośredniego zliczenia wygląda: 10 par → $-0{,}0122$; 20 par → $-0{,}5034$; 30 par → $+0{,}0029$; 40 par → $+0{,}4094$; 50 par → $+0{,}1813$; 60 par → $+0{,}0729$. To obserwacja o oscylacyjnej naturze formuły jawnego, nie o defekcie kontroli.
+
+**R3 (szczelina).** Linia 11: „grzebień co drugą próbkę k-space daje kopię obrazu w N/2, jeden do jeden". Sekcja §5 rafinuje właściwie: to $(x+Tx)/2$, więc suma dwóch przesuniętych kopii z wagą $1/2$ każda, a kanał $(x-Tx)/2$ nie jest odzyskiwalny z samego wyniku. „Jeden do jeden" w narracji należy czytać jako korespondencję maski z przesunięciem, nie pełną odwracalność.
+
+**Co zweryfikowano poza plikiem.** Dołączony `check_rh_formulas.py`: 13/13 PASS przy pierwszym uruchomieniu. Niezależnie: $\psi(50{,}5)$ przez dokładną arytmetykę = 49,48538079241837 — zgodne z tabelą; wzór obcięty do 30/60 par: 49,48827965921462 / 49,55827796617396 — zgodne; kontrola $2+\cos z$: miara Fouriera $2\delta_0+\tfrac12\delta_1+\tfrac12\delta_{-1}$ faktycznie jest dodatnia, zera w $\pi\pm i\operatorname{arcosh} 2$; mapowanie $\lambda_\rho=\gamma+i(1/2-\beta)$ poprawne algebraicznie; równanie funkcyjne Hurwitza i tożsamość $\zeta(-m,a)=-B_{m+1}(a)/(m+1)$ zweryfikowane niezależnie.
+
+**Czego te uwagi nie mówią.** Nie znaleziono błędu w dowodzie żadnego twierdzenia z tej notatki; nie znaleziono drogi do zamknięcia pustego łożyska; **RH: NOT PROVED** pozostaje zgodne z treścią.

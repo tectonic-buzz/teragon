@@ -111,3 +111,19 @@ $$
 Sumujemy wszystkie zera nietrywialne z krotnościami; dla tej klasy próbnej suma jest bezwzględnie zbieżna. Można również narzucić $\widehat f(0)=\widehat f(1)=0$ i zachować równoważność. Pod RH każdy składnik jest $|\widehat f(\rho)|^2$. Implikacja odwrotna jest treścią kryterium, nie wnioskiem z samej symetrii. [Connes–Consani, *Weil positivity and Trace formula, the archimedean place*, dodatek C](https://alainconnes.org/wp-content/uploads/Selecta.pdf).
 
 **Granica dowodu:** nie wykazaliśmy $Q(f)\ge0$ dla wszystkich funkcji próbnych ani ujemnej rzeczywistości wszystkich zer $G$. Wskazaliśmy dwie równoważne postacie brakującego twierdzenia. Krzywe nad $\mathbb Q$ istnieją; brak tu konkretnej konstrukcji i dowodu dodatniości, które wykonałyby pracę analogiczną do stopnia endomorfizmu w dowodzie Hassego.
+
+---
+
+### Uwagi recenzenckie, append-only
+
+Narracja powyżej pozostaje niezmieniona. Poniższe dotyczą szczelin między narracją a częścią twardą, które czytelnik może przeoczyć.
+
+**R1 (szczelina).** Linia 15: „tyle samo, co ci powiedziałem wczoraj — „kula nad ℚ jeszcze nie"" — w całej reszcie dokumentu (i notatek 02–03) metaforą jest *placek*, nie *kula*. Wszystko wskazuje na resztkę wcześniejszej wersji; w przyszłej redakcji zamienić.
+
+**R2 (drobne).** §2, wiersz z $F_0=1+256z^4$: zera $G_0$ podane bez wyprowadzenia. Czytelnik może się zatrzymać, skąd $i/16$, skoro wielomian ma stopień 4 i współczynnik 256. Jedno zdanie wystarczy: $F_0$ ma zera w $(1/\sqrt{32})e^{\pm i\pi/4}$, a $z^2$ daje $\pm i/16$.
+
+**R3 (drobne).** Linia 13: $\alpha = (3+i\sqrt{19})/2 \approx 1,5 + 2,18i$ — podanie dokładnej postaci obok przybliżenia zapobiega podejrzeniu, że $2,18$ jest wyliczone, gdy jest zaokrągleniem $2,17945\ldots$
+
+**Co zweryfikowano poza plikiem.** Parzystość $F(z)=\xi(1/2+z)$ do $|F(z)-F(-z)|<10^{-51}$ przy 50 cyfrach; wartość $\xi(1/2+i t_1)$ rzeczywista do $10^{-60}$; krzywa $y²=x³+x+1$ nad $\mathbb F_7$: $\#E=5$, $a=3$, wyróżnik $-19$; kontrola $F_0$ z zerami w $|\Re z|<1/2$; półokreśloność formy stopnia na $(q,a)=(9,-6)$ jako $(m+3n)^2$.
+
+**Czego te uwagi nie mówią.** Nie dołączono dowodu RH; nie znaleziono nowej drogi do niego; nie wykazano dodatniości funkcjonału Weila. Ta sekcja jest zapisem kontroli, nie krokiem dowodowym.

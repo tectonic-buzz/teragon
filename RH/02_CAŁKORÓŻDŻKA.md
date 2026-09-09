@@ -118,3 +118,17 @@ $$
 $h$ jest dodatnio określona na osi rzeczywistej, nawet $h(t)\ge1$, ale ma zera $z=\pi\pm i\operatorname{arcosh}2$. Sama dodatniość miary w reprezentacji Fouriera nie wymusza rzeczywistości wszystkich zer jej całkowitej transformaty. Nie jest tym samym co dodatniość konkretnego funkcjonału Weila.
 
 **W skrócie:** antyróżnica z warunkiem normalizującym → transformacja theta z obszarem zbieżności → całkowita funkcja $\xi$ z jawnymi składnikami brzegowymi. Te kroki dają równanie funkcyjne i obliczenia. Dodatniość potrzebna do RH pozostaje osobnym twierdzeniem z dodatku do pierwszej notatki. Żaden z testów liczbowych nie zastępuje tego kroku.
+
+---
+
+### Uwagi recenzenckie, append-only
+
+Narracja powyżej pozostaje niezmieniona.
+
+**R1 (kolizja notacji).** Linia 5 używa π dla operatora przesunięcia $e^D-1$. W [notatce 01](01_RAMIFIKSACJA.md) $\pi$ oznaczało nakrycie $z\mapsto z^2$ (tu omawiane w Przekładni B jako fałd). To ten sam symbol, dwie różne role. Sekcje 1–3 tłumaczą każdą z osobna, więc błędu nie ma — ale czytelnik skaczący między plikami może się zatrzymać. Jedno zdanie klucza wystarczy.
+
+**R2 (szczelina do pilnowania).** Linia 5: „silnik policzył $\zeta(-1)=-1/12$ z samego koła Bernoulliego". Koło (szereg $1/(e^D-1)$) ma zerowe współczynniki przy nieparzystych potęgach powyżej $D^1$ — daje tylko $\zeta(1-2k)$ dla $k\ge1$. Wartość przy $m=1$ (czyli $\zeta(-1)$) nie leży w tym kole; wymaga wzoru $\zeta(-m)=-B_{m+1}/(m+1)$, który formalne podstawienie operatora nie dowodzi. Sekcja §1 mówi o tym właściwie ("podstawienie operatora pozostaje rachunkiem formalnym"), ale sformułowanie narracyjne jest bliższe silnikowi, niż zasługuje. **Nie błąd matematyczny — ryzyko nadinterpretacji.**
+
+**Co zweryfikowano poza plikiem.** Współczynniki szeregu $z/(e^z-1)$: $1,-1/2,1/6,0,-1/30,0,1/42$ dokładnie wymiernie; Euler–Maclaurin $\zeta(3)$ z $N=9,m=4$ daje błąd $-1{,}40773534529\cdot10^{-12}$ zgodny z plikiem do 10 cyfr; niezależna kontrola szeregiem Apéry'ego (150 wyrazów) $\zeta(3)$ = 1,2020569031595942854; $\theta(1/t)=\sqrt{t}\,\theta(t)$ do $10^{-60}$ dla $t=0{,}3$ i $t=2$; $\xi(2{,}7)$ dwiema drogami do $10^{-62}$; tożsamości Hurwitza i antyróżnicy wielomianów Bernoulliego potwierdzone wymiernie i numerycznie.
+
+**Czego te uwagi nie mówią.** Nie dołączono dowodu RH; nie wykazano rozbieżności między ξ a Eulerem–Maclaurinem; nie wykazano, że trzy koła tworzą zamknięty system. Kontrola w §4 (funkcja $2+\cos z$ z dodatnią miarą i zerami poza osią) nadal zamyka pokusę przeniesienia dodatniości Fouriera na rzeczywistość zer.
