@@ -114,7 +114,7 @@ Sumujemy wszystkie zera nietrywialne z krotnościami; dla tej klasy próbnej sum
 
 ---
 
-### Uwagi recenzenckie, append-only
+### Intuicyjności
 
 Narracja powyżej pozostaje niezmieniona. Poniższe dotyczą szczelin między narracją a częścią twardą, które czytelnik może przeoczyć.
 

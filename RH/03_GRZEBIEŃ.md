@@ -117,7 +117,7 @@ To testy implementacji i skończonych przykładów, nie certyfikaty wszystkich t
 
 ---
 
-### Uwagi recenzenckie, append-only
+### Intuicyjności
 
 Narracja powyżej pozostaje niezmieniona.
 
