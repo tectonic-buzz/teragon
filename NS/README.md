@@ -6,6 +6,9 @@ Z katalogu repozytorium:
 
 ```sh
 python3 NS/check_moving_volume.py
+python3 NS/check_stretching_envelope.py
 ```
 
 Python 3, wyłącznie biblioteka standardowa. Siedem testów bilansu dla obrotu jak ciało sztywne: dokładne liczby wymierne i całki wielomianów po brzegu. To sprawdzenie skończonego modelu, nie solver ogólnego przepływu i nie dowód globalnej regularności Naviera–Stokesa.
+
+Drugi przykład: [Otoczka i wir](../PÓŁ/1297_Otoczka_i_wir.md). Osiem kontroli rozciągania wirowości przy zachowaniu objętości, z dodatkowym odczytem skończonej zety spektralnej tensora deformacji. Ten odczyt odróżnia rozciągnięcie od nieodkształconego stanu, ale nie odzyskuje obrotu utraconego przez tensor.
