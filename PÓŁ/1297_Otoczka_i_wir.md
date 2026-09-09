@@ -130,3 +130,83 @@ t=\frac1a\log\left(1+\frac{a\theta}{\Omega_0}\right)
 Tutaj \(\theta\) oznacza fazę rozwiniętą, z zachowaną liczbą obrotów, nie sam kąt modulo \(2\pi\). Odczyt czasu wymaga również znanych \(a\), \(\Omega_0\) i początku pomiaru.
 
 A relaksacja? Nie wynika z samego obrotu: ten model rozciąga i wzmacnia wir. Lepkość rozprasza energię, ale otoczenie wykonuje pracę. Słowne sąsiedztwo podpowiedziało pytanie; rachunek rozdzielił odpowiedzi.
+
+---
+
+**↳ Poprawka do mojego „zegara z tej ζ nie odzyskamy”: którego zegara?**
+
+Obrotu faktycznie nie: \(\Omega_0\) zostało zgubione. Ale dla znanego \(a>0\) i gałęzi \(t\ge0\) odczyt
+
+\[
+Z(t)=\zeta_C(1)=2e^{at}+e^{-2at},\qquad
+Z'(t)=2a(e^{at}-e^{-2at})
+\]
+
+jest ściśle rosnący dla \(t>0\). Pozwala więc odzyskać czas od nieodkształconego stanu. Przykładowo \(Z=17/4\) daje \(e^{at}=2\), czyli \(t=\log2/a\). Nie wymaga to znajomości obrotu.
+
+Ta odwrotność ma warunki: bez znanego \(a\) odczyt wyznacza tylko iloczyn \(at\). W pobliżu początku
+
+\[
+Z(t)=3+3a^2t^2+O(t^3),
+\]
+
+więc odwrotność pozostaje ciągła, ale jej czułość liniowa \(dt/dZ\) rośnie bez ograniczenia przy \(Z\downarrow3\). Nie ma tam stałego ograniczenia wzmocnienia błędu proporcjonalnego do błędu odczytu. Jednoznaczność i dobre uwarunkowanie to osobne pytania.
+
+Z kolei zegar fazowy czytany tylko modulo \(2\pi\) gubi licznik obrotów. Dla \(\Omega_0>0\), \(0\le\phi<2\pi\) i \(k=0,1,\ldots\):
+
+\[
+t_k=\frac1a\log\left(1+\frac{a}{\Omega_0}(\phi+2\pi k)\right)
+\]
+
+to różne chwile o tym samym fazorze \(e^{i\phi}\). Nawet gładkość ruchu nie odzyska obrotów schowanych między rzadkimi próbkami bez dodatkowego ograniczenia prędkości fazowej.
+
+[check_phase_clock.py](../NS/check_phase_clock.py): siedem kontroli numerycznych odwrotności, utraty obrotów, nieznanego tempa i czułości przy początku. To nie jest korekcja danych, których instrument nie zarejestrował — to rozdzielenie tego, jakie dane wystarczają do którego zegara.
+
+---
+
+> Rozróżnia, jeśli ma dodakowe własne bicie
+>
+> głowa w jedną, głowa w drógą i patrz na punkt odbicia
+>
+> jak takiego nie ma, to se pomyśl i jest
+
+**↳ Własne bicie: odniesienie plus porównanie, nie samo tykanie.**
+
+Rozbudujmy instrument. Oprócz \(C\) mierzy fazor obrotu \(q(t)=e^{i\theta(t)}\), względem wzorca \(r(t)=e^{i\omega_r t}\). Ich zespolone porównanie to
+
+\[
+b=q\overline r,\qquad
+\operatorname{Im}(\overline b\,\dot b)=\Omega_0e^{at}-\omega_r.
+\]
+
+Przy znanym \(a,t,\omega_r\) odzyskujemy
+
+\[
+\Omega_0=e^{-at}\big[\operatorname{Im}(\overline b\,\dot b)+\omega_r\big].
+\]
+
+To rozróżnia poprzednich bliźniaków: przy \(a=\omega_r=1\), \(t=\log2\), oba mają \(\zeta_C(1)=17/4\), ale \(\Omega_0=1\) daje tempo różnicy faz \(1\), a \(\Omega_0=2\) daje \(3\). Informację wnosi pomiar fazy obrotu. Para \((\zeta_C,r)\) bez tego pomiaru nadal ich nie rozróżnia; sam moduł \(|b|=1\) również nie.
+
+Punkt zerowy fazy można wybrać umownie. Wspólna zmiana \(q\mapsto e^{i\alpha}q\), \(r\mapsto e^{i\alpha}r\) nie zmienia \(b\). Wirtualne odniesienie jest legalne; wirtualna odpowiedź badanego przepływu nie zastępuje pomiaru.
+
+**↳ Dwie strony: prosty model dwóch projekcji.**
+
+Dla zespolonego odczytu \(z=X+iY\) wybierzmy osie pod kątami \(\pm\beta\):
+
+\[
+m_+=X\cos\beta+Y\sin\beta,\qquad
+m_-=X\cos\beta-Y\sin\beta.
+\]
+
+Gdy \(\sin(2\beta)\ne0\),
+
+\[
+X=\frac{m_++m_-}{2\cos\beta},\qquad
+Y=\frac{m_+-m_-}{2\sin\beta}.
+\]
+
+To dwa odczyty tego samego stanu — jednoczesne albo z uwzględnionym ruchem między nimi. Dla \(\beta=\pi/4\) osie są prostopadłe; przeciwne kierunki na jednej osi nie dają drugiej składowej. Jeśli wcześniej zostało tylko \(C\) lub moduł, obracanie samego układu współrzędnych brakującej fazy nie odtworzy.
+
+Nadal potrzebne jest rozróżnienie próbek od ciągłego przebiegu: własny wzorzec nie usuwa obrotów utraconych między próbkami. Test pokazuje dwa różne \(\Omega_0\) z identycznym \(b\) na obu końcach przedziału. Z kolei rzeczywista intensywność interferencji \(|q+r|^2=2+2\operatorname{Re}b\) daje tylko cosinus różnicy faz, nie jej pełny znak.
+
+[check_reference_beat.py](../NS/check_reference_beat.py): siedem kontroli numerycznych porównania z wzorcem, dwóch projekcji oraz ich ograniczeń. To model bez szumu; nie dowód nowego czujnika ani odzyskiwania niezarejestrowanych danych przez samą zetę.
