@@ -1,0 +1,129 @@
+{
+  "scope": "Noiseless constant-phase EPI diagnostic; not clinical validation or implemented production fix.",
+  "phase_scenarios": {
+    "clean_no_correction": {
+      "actual_phase": 0,
+      "applied_estimate": 0,
+      "residual_phase": 0,
+      "complex_nrmse": 2.8991081383530783e-16,
+      "pair_formula_nrmse": 2.8991081383530783e-16,
+      "norm_ratio": 1.0,
+      "main_coefficient_magnitude": 1.0,
+      "ghost_coefficient_magnitude": 0.0,
+      "ghost_main_coefficient_ratio": 0.0
+    },
+    "clean_wrong_correction": {
+      "actual_phase": 0,
+      "applied_estimate": 0.05,
+      "residual_phase": -0.05,
+      "complex_nrmse": 0.027387524930572563,
+      "pair_formula_nrmse": 3.0586628015113136e-16,
+      "norm_ratio": 0.9999999999999997,
+      "main_coefficient_magnitude": 0.9996875162757026,
+      "ghost_coefficient_magnitude": 0.024997395914712332,
+      "ghost_main_coefficient_ratio": 0.025005209635746147
+    },
+    "error_correction_bypassed": {
+      "actual_phase": 0.6,
+      "applied_estimate": 0,
+      "residual_phase": 0.6,
+      "complex_nrmse": 0.3237764067521086,
+      "pair_formula_nrmse": 3.0591738778854454e-16,
+      "norm_ratio": 0.9999999999999997,
+      "main_coefficient_magnitude": 0.955336489125606,
+      "ghost_coefficient_magnitude": 0.29552020666133955,
+      "ghost_main_coefficient_ratio": 0.3093362496096232
+    },
+    "correct_phase": {
+      "actual_phase": 0.6,
+      "applied_estimate": 0.6,
+      "residual_phase": 0.0,
+      "complex_nrmse": 2.9308795758130387e-16,
+      "pair_formula_nrmse": 2.9308795758130387e-16,
+      "norm_ratio": 1.0,
+      "main_coefficient_magnitude": 1.0,
+      "ghost_coefficient_magnitude": 0.0,
+      "ghost_main_coefficient_ratio": 0.0
+    },
+    "residual_phase_0_05": {
+      "actual_phase": 0.6,
+      "applied_estimate": 0.55,
+      "residual_phase": 0.04999999999999993,
+      "complex_nrmse": 0.02738752493057252,
+      "pair_formula_nrmse": 2.9950679300206293e-16,
+      "norm_ratio": 0.9999999999999994,
+      "main_coefficient_magnitude": 0.9996875162757026,
+      "ghost_coefficient_magnitude": 0.024997395914712298,
+      "ghost_main_coefficient_ratio": 0.025005209635746112
+    },
+    "overcorrection": {
+      "actual_phase": 0.6,
+      "applied_estimate": 1.5,
+      "residual_phase": -0.9,
+      "complex_nrmse": 0.4765548159518449,
+      "pair_formula_nrmse": 3.1109906174088456e-16,
+      "norm_ratio": 0.9999999999999994,
+      "main_coefficient_magnitude": 0.9004471023526769,
+      "ghost_coefficient_magnitude": 0.43496553411123023,
+      "ghost_main_coefficient_ratio": 0.4830550656165784
+    },
+    "half_fov_swap": {
+      "actual_phase": 3.141592653589793,
+      "applied_estimate": 0,
+      "residual_phase": 3.141592653589793,
+      "complex_nrmse": 1.0956151202315247,
+      "pair_formula_nrmse": 2.917779044842493e-16,
+      "norm_ratio": 0.9999999999999997,
+      "main_coefficient_magnitude": 6.123233995736766e-17,
+      "ghost_coefficient_magnitude": 1.0,
+      "ghost_main_coefficient_ratio": null
+    }
+  },
+  "unknown_phase_ambiguity": {
+    "phase_a": 0.6,
+    "phase_b": 0.2,
+    "images_nrmse": 0.21766512274534755,
+    "raw_samples_nrmse": 2.974002221662198e-16,
+    "swap_and_add_pi_raw_nrmse": 0.0,
+    "entropy_original": 7.3248788780796135,
+    "entropy_shifted": 7.3248788780796135
+  },
+  "conditional_one_correlation_estimator": {
+    "true_phase": 0.6,
+    "estimated_phase": 0.6000000000000002,
+    "coherence": 0.9999999999999996,
+    "reconstruction_nrmse": 3.4804561854929624e-16,
+    "all_image_estimate": null,
+    "all_image_coherence": 0.0,
+    "violated_support_estimated_phase": -0.9707963267948968,
+    "violated_support_coherence": 1.0,
+    "violated_support_reconstruction_nrmse": 1.0
+  },
+  "tile_permutation": {
+    "before": {
+      "input_dimension": 64,
+      "zeta_at_0": 32,
+      "zeta_at_1": 32.00000000000001,
+      "nullity": 32,
+      "eigenvalue_tolerance": 1e-10
+    },
+    "after": {
+      "input_dimension": 64,
+      "zeta_at_0": 32,
+      "zeta_at_1": 32.00000000000001,
+      "nullity": 32,
+      "eigenvalue_tolerance": 1e-10
+    },
+    "max_normal_spectral_change": 6.661338147750939e-16,
+    "literal_14_piece_stomachion_enumeration": false
+  },
+  "full_acquisition_zeta": {
+    "zeta_H_any_s": 64,
+    "normal_identity_errors": [
+      1.4082299106081968e-15,
+      3.124349480655948e-15,
+      2.166607254677846e-15,
+      1.4200654763745748e-15
+    ]
+  }
+}

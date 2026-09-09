@@ -1,0 +1,203 @@
+{
+  "scope": "Offline synthetic transport and calibrated Fourier tests; not clinical MRI validation.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "seed": 20260909,
+  "fec": {
+    "rs2_sha256": {
+      "user_bytes": 16384,
+      "wire_bytes": 16546,
+      "codewords": 65,
+      "overhead_bytes": 162,
+      "overhead_percent_of_user": 0.98876953125,
+      "correctable_symbols_per_word": 1,
+      "integrity_is_inband_rs_protected": true,
+      "fault_models": {
+        "one_bit_per_word": {
+          "identical_packets": 20,
+          "trials": 20,
+          "changed_symbols": 1300
+        },
+        "capacity_symbols_per_word": {
+          "identical_packets": 20,
+          "trials": 20,
+          "changed_symbols": 1300
+        },
+        "same_payload_positions_one_error_per_legacy_256B_frame": {
+          "identical_packets": 0,
+          "rejected_packets": 20,
+          "wrong_payload_releases": 0,
+          "trials": 20,
+          "maximum_errors_in_one_rs_word": 2
+        }
+      }
+    },
+    "rs4_sha256": {
+      "user_bytes": 16384,
+      "wire_bytes": 16680,
+      "codewords": 66,
+      "overhead_bytes": 296,
+      "overhead_percent_of_user": 1.806640625,
+      "correctable_symbols_per_word": 2,
+      "integrity_is_inband_rs_protected": true,
+      "fault_models": {
+        "one_bit_per_word": {
+          "identical_packets": 20,
+          "trials": 20,
+          "changed_symbols": 1320
+        },
+        "capacity_symbols_per_word": {
+          "identical_packets": 20,
+          "trials": 20,
+          "changed_symbols": 2640
+        },
+        "same_payload_positions_one_error_per_legacy_256B_frame": {
+          "identical_packets": 20,
+          "rejected_packets": 0,
+          "wrong_payload_releases": 0,
+          "trials": 20,
+          "maximum_errors_in_one_rs_word": 2
+        }
+      }
+    },
+    "rs4_crc32-frame": {
+      "user_bytes": 16384,
+      "wire_bytes": 16920,
+      "codewords": 67,
+      "overhead_bytes": 536,
+      "overhead_percent_of_user": 3.271484375,
+      "correctable_symbols_per_word": 2,
+      "integrity_is_inband_rs_protected": true,
+      "fault_models": {
+        "one_bit_per_word": {
+          "identical_packets": 20,
+          "trials": 20,
+          "changed_symbols": 1340
+        },
+        "capacity_symbols_per_word": {
+          "identical_packets": 20,
+          "trials": 20,
+          "changed_symbols": 2680
+        },
+        "same_payload_positions_one_error_per_legacy_256B_frame": {
+          "identical_packets": 20,
+          "rejected_packets": 0,
+          "wrong_payload_releases": 0,
+          "trials": 20,
+          "maximum_errors_in_one_rs_word": 2
+        }
+      }
+    }
+  },
+  "fourier_noiseless": {
+    "nrmse_plus_vs_projector_formula": 2.3031471313105345e-16,
+    "nrmse_minus_vs_projector_formula": 3.8906370131794235e-16,
+    "nrmse_joined_vs_input": 2.8991081383530783e-16,
+    "relative_plus_minus_inner_product": 3.832702235572038e-17,
+    "fold_nrmse": 0.5478075601157624,
+    "predicted_fold_nrmse": 0.5478075601157627,
+    "half_shift_overlap_r": 0.39981375416003007,
+    "adding_same_half_twice_nrmse": 0.9999999999999997,
+    "adding_same_full_image_twice_nrmse": 1.0,
+    "duplicate_samples_rejected": true,
+    "real_image_missing_channel_norm": 11.58208669480595,
+    "real_image_missing_channel_measured_norm": 1.1532707408313673e-15,
+    "zeta_H_0": 2048,
+    "kernel_dimension": 2048
+  },
+  "fourier_sender": {
+    "nrmse_plus_vs_projector_formula": 1.9984019324249132e-16,
+    "nrmse_minus_vs_projector_formula": 3.7153072292850344e-16,
+    "nrmse_joined_vs_input": 2.6449595684064644e-16,
+    "relative_plus_minus_inner_product": 3.206310222556787e-17,
+    "fold_nrmse": 0.5477389410572321,
+    "predicted_fold_nrmse": 0.5477389410572319,
+    "half_shift_overlap_r": 0.39996410489900447,
+    "adding_same_half_twice_nrmse": 1.0000000000000002,
+    "adding_same_full_image_twice_nrmse": 1.0,
+    "duplicate_samples_rejected": true,
+    "real_image_missing_channel_norm": 11.581149996382083,
+    "real_image_missing_channel_measured_norm": 1.2395391710905219e-15,
+    "zeta_H_0": 2048,
+    "kernel_dimension": 2048
+  },
+  "transport_error_parseval_norm_ratio": 1.0,
+  "coils": {
+    "independent_coils_noiseless_nrmse": 3.6262636493798375e-16,
+    "duplicate_coils_nrmse": 0.5478075601157624,
+    "duplicate_coils_vs_plus_sector_nrmse": 2.949806997962309e-16,
+    "wrong_phase_calibration_0_15_rad_nrmse": 0.08209412024253859,
+    "noisy_nrmse": 0.03646774151969891,
+    "noise_retained_norm": 0.8937357374812054,
+    "noise_norm_predicted_for_EstarE_half_identity": 0.8937357374812057,
+    "samples_per_coil": 2048,
+    "coils": 2,
+    "total_complex_measurements": 4096,
+    "explicit_normal_spectra_size8": {
+      "independent": {
+        "input_dimension": 64,
+        "zeta_at_0": 64,
+        "zeta_at_1": 128.0,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10
+      },
+      "duplicate": {
+        "input_dimension": 64,
+        "zeta_at_0": 32,
+        "zeta_at_1": 32.00000000000001,
+        "nullity": 32,
+        "eigenvalue_tolerance": 1e-10
+      }
+    },
+    "local_matrix_conditioning": {
+      "orthogonal": {
+        "input_dimension": 2,
+        "zeta_at_0": 2,
+        "zeta_at_1": 2.0000000000000004,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10,
+        "condition_number": 1.0000000000000002
+      },
+      "almost_duplicate": {
+        "input_dimension": 2,
+        "zeta_at_0": 2,
+        "zeta_at_1": 8004001.994975863,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10,
+        "condition_number": 4002.0007501249024
+      }
+    },
+    "calibration": "Exactly specified artificial sensitivity maps; no hardware validation or independent calibration data."
+  },
+  "heat": {
+    "time": 2.0,
+    "commutator_norm": 2.7078241697805266e-15,
+    "minus_to_plus_leakage_norm": 9.611808333100265e-16,
+    "heat_matrix_condition_number": 2980.957987042318,
+    "inverse_highest_mode_gain": 2980.9579870417283,
+    "zeta_L_0": 15,
+    "interpretation": "Finite heat smoothing preserves symmetry sectors; inversion amplifies noise, not ramification removal."
+  },
+  "goldilocks": {
+    "modulus": 18446744069414584321,
+    "lucas_prime_certificate_base7": true,
+    "inverse_two": 9223372034707292161,
+    "exact_sum_difference_roundtrips": 1000,
+    "trials": 1000,
+    "sum_only_collision": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "same_sum": true,
+    "modular_wrap_collision": true,
+    "interpretation": "An odd field makes the two-channel Fourier matrix invertible; it does not supply a missing channel or recover unbounded integers."
+  }
+}

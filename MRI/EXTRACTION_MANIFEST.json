@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "extracted_on": "2026-09-09",
+  "source_repository": "irysek",
+  "source_paths_omitted": true,
+  "source_head": "a77dfb96cb91780ca334d0d4cfd86957558007e0",
+  "source_files_tracked": false,
+  "note": "Content snapshot, not an authenticated signature; the source HEAD does not contain these untracked files. Only reproduction paths were adapted.",
+  "files": [
+    {
+      "path": "DIRAC_DELTA_FROM_ZETA.md",
+      "source_sha256": "7cfd29858f6248d1fcc85928ccb1b4e6cd05782dd368a2d3414a0d596be55ac7",
+      "extracted_sha256": "7cfd29858f6248d1fcc85928ccb1b4e6cd05782dd368a2d3414a0d596be55ac7",
+      "size_bytes": 2593,
+      "adapted": false
+    },
+    {
+      "path": "DISCRIMINANT_AND_OSTOMACHION.md",
+      "source_sha256": "7acab6c8b30567e0691ad3039c7eff23922455c7bf9858d17a47cf53b406d120",
+      "extracted_sha256": "dfb0d0a37ac9f998d8bcc03a508a0e4855033ee71b63de472fa01d047cc11564",
+      "size_bytes": 10250,
+      "adapted": true
+    },
+    {
+      "path": "KIMI_REVIEW_NOTES_2026_09_09.md",
+      "source_sha256": "a0e73a47d5bc04e37cc471be85447bb0d10961f619dea5e1e34c7d4584451eef",
+      "extracted_sha256": "a0e73a47d5bc04e37cc471be85447bb0d10961f619dea5e1e34c7d4584451eef",
+      "size_bytes": 12000,
+      "adapted": false
+    },
+    {
+      "path": "MRI_END_TO_END.md",
+      "source_sha256": "3d52f6b05789e68b0fdb29809dc38c57262d7344e0735ad551ee4b88b8f322c4",
+      "extracted_sha256": "0b0ad2e540c345a9d2576d5275431c127f1a8d4db722696c75d99aed3232f55e",
+      "size_bytes": 12524,
+      "adapted": true
+    },
+    {
+      "path": "MRI_EPI_PHASE_AND_OSTOMACHION.md",
+      "source_sha256": "4a6794b2ef0afd0fcb7d996602f3a75cdbbc1759cbfae59bf6b29bd769fddc30",
+      "extracted_sha256": "4ba72d3721296ec81b5223519cf8f936614eac95463018cd9cdc5b8e1d19c70c",
+      "size_bytes": 10514,
+      "adapted": true
+    },
+    {
+      "path": "MRI_MOBIUS_FOURIER_AUDIT.md",
+      "source_sha256": "2d11bccfdc3c748788216799497ca42ad4d11a11be62fe7b211862e48faf596e",
+      "extracted_sha256": "a06ec896501e24cd96085e4788ffdb8d476f09c6d747ef6d123a9cdbd6983b03",
+      "size_bytes": 38766,
+      "adapted": true
+    },
+    {
+      "path": "MRI_REDUNDANCY_PROFILES.md",
+      "source_sha256": "3afc48587970069fb05b4e7c9e0cbf83e8ea841ffa3442353258d2350311c0eb",
+      "extracted_sha256": "2534b6665832581fb4ed0d468214f9fd6fabcad56db132daa3716cb7da7e584d",
+      "size_bytes": 16870,
+      "adapted": true
+    },
+    {
+      "path": "MRI_REVIEW_AND_DOUBLE_COVER.md",
+      "source_sha256": "11c833a744d545f09d673d6f7ed35af1883202ef9ac2237eac66b9104b904572",
+      "extracted_sha256": "13d47aaa2022dacb71fc8a83b2470d6fbc3c484ac5d5c7e2d86137b4bb09f79c",
+      "size_bytes": 13986,
+      "adapted": true
+    },
+    {
+      "path": "ZETA_PRIOR_EXAMPLES.md",
+      "source_sha256": "2c03c6bc3bb10c23227d0f5368e7a048cdfd1c3a533696bb04f04d7d41152ced",
+      "extracted_sha256": "2c03c6bc3bb10c23227d0f5368e7a048cdfd1c3a533696bb04f04d7d41152ced",
+      "size_bytes": 19386,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/complementary_acquisition.png",
+      "source_sha256": "b58fa5865509dd1c977e7969fe350e27dbe449d63a55525fdd377753bb54d876",
+      "extracted_sha256": "b58fa5865509dd1c977e7969fe350e27dbe449d63a55525fdd377753bb54d876",
+      "size_bytes": 1631,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/damaged_transport.png",
+      "source_sha256": "a86796517e0c15af6b0a416e3bebde7be7dec6f1a58770317b1ce348fafd43de",
+      "extracted_sha256": "a86796517e0c15af6b0a416e3bebde7be7dec6f1a58770317b1ce348fafd43de",
+      "size_bytes": 3585,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/epi_phase_probe.json",
+      "source_sha256": "3c70d0644d60dff36f5db01cc3e3ee0d256e2e514802cfc630364a419ef4fcd9",
+      "extracted_sha256": "3c70d0644d60dff36f5db01cc3e3ee0d256e2e514802cfc630364a419ef4fcd9",
+      "size_bytes": 4436,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/followup_results.json",
+      "source_sha256": "caf2711de33b3c12ff0ed63907b719e6a001677bc5d34af1e53197e795488acf",
+      "extracted_sha256": "caf2711de33b3c12ff0ed63907b719e6a001677bc5d34af1e53197e795488acf",
+      "size_bytes": 6699,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/half_sampling.png",
+      "source_sha256": "abe50a948a77da1082f268eb893926f6b6ba966359dd784f03f16aea99600360",
+      "extracted_sha256": "abe50a948a77da1082f268eb893926f6b6ba966359dd784f03f16aea99600360",
+      "size_bytes": 1015,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/primary_arrays.npz",
+      "source_sha256": "461000833d8d8f401108077944cb327a3589599a57057f21bf8ce55b8517c06f",
+      "extracted_sha256": "461000833d8d8f401108077944cb327a3589599a57057f21bf8ce55b8517c06f",
+      "size_bytes": 429755,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/reconstructions.png",
+      "source_sha256": "ac542a2380e2e2b17a8cb45c5d1994d983dc0d12beae226b9fd99d605ea65af7",
+      "extracted_sha256": "ac542a2380e2e2b17a8cb45c5d1994d983dc0d12beae226b9fd99d605ea65af7",
+      "size_bytes": 59064,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/recovered_transport.png",
+      "source_sha256": "b58fa5865509dd1c977e7969fe350e27dbe449d63a55525fdd377753bb54d876",
+      "extracted_sha256": "b58fa5865509dd1c977e7969fe350e27dbe449d63a55525fdd377753bb54d876",
+      "size_bytes": 1631,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/results.json",
+      "source_sha256": "3c54713e17826f0ef078c139b4f339efd6ae81a8a7a2971a557ce6ba5b137e2b",
+      "extracted_sha256": "3c54713e17826f0ef078c139b4f339efd6ae81a8a7a2971a557ce6ba5b137e2b",
+      "size_bytes": 68649,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/sender_baseline.png",
+      "source_sha256": "b58fa5865509dd1c977e7969fe350e27dbe449d63a55525fdd377753bb54d876",
+      "extracted_sha256": "b58fa5865509dd1c977e7969fe350e27dbe449d63a55525fdd377753bb54d876",
+      "size_bytes": 1631,
+      "adapted": false
+    },
+    {
+      "path": "mri_benchmark/truth.png",
+      "source_sha256": "e5277c9fb8df89b024bcbf9fcef3a7a256fdfa34ff0ac8102ecf8f5211b8722f",
+      "extracted_sha256": "e5277c9fb8df89b024bcbf9fcef3a7a256fdfa34ff0ac8102ecf8f5211b8722f",
+      "size_bytes": 462,
+      "adapted": false
+    },
+    {
+      "path": "mri_epi_phase_probe.py",
+      "source_sha256": "d7677d83e34f4f06fd8772d51fb4ab0dceb282e778dec4e2f9992ff98a8120f1",
+      "extracted_sha256": "d7677d83e34f4f06fd8772d51fb4ab0dceb282e778dec4e2f9992ff98a8120f1",
+      "size_bytes": 7493,
+      "adapted": false
+    },
+    {
+      "path": "mri_followup_checks.py",
+      "source_sha256": "840aa488cac77ea930c1d32e2ffea0f12ccbcdf26b8883c2364eadc500920b96",
+      "extracted_sha256": "840aa488cac77ea930c1d32e2ffea0f12ccbcdf26b8883c2364eadc500920b96",
+      "size_bytes": 14595,
+      "adapted": false
+    },
+    {
+      "path": "mri_rs_reference.py",
+      "source_sha256": "4ba71012e36ae1b28772bd407e956ef837caeead7b8e0fe48718a1178377036b",
+      "extracted_sha256": "4ba71012e36ae1b28772bd407e956ef837caeead7b8e0fe48718a1178377036b",
+      "size_bytes": 6214,
+      "adapted": false
+    },
+    {
+      "path": "mri_transport_benchmark.py",
+      "source_sha256": "1d717c09cc666a5310bc2c2e968cd83afb27ec700ff9ccabbb265d675c503db2",
+      "extracted_sha256": "1d717c09cc666a5310bc2c2e968cd83afb27ec700ff9ccabbb265d675c503db2",
+      "size_bytes": 20837,
+      "adapted": false
+    },
+    {
+      "path": "test_discriminant_ostomachion.py",
+      "source_sha256": "9755044391e7ebb56c773b0762006ec0c4390100acbbb125e1114b2985e33f33",
+      "extracted_sha256": "9755044391e7ebb56c773b0762006ec0c4390100acbbb125e1114b2985e33f33",
+      "size_bytes": 11628,
+      "adapted": false
+    },
+    {
+      "path": "test_galois_krull_readout.py",
+      "source_sha256": "35ff994fbb010ef8bb2e536d545f376d0a6827247262a375dbadca33c8dcc5f3",
+      "extracted_sha256": "35ff994fbb010ef8bb2e536d545f376d0a6827247262a375dbadca33c8dcc5f3",
+      "size_bytes": 10926,
+      "adapted": false
+    },
+    {
+      "path": "test_mobius_fourier_readout.py",
+      "source_sha256": "48903c70568655d59a837a7700efdd4585514fdde77e61c600e3484456586e04",
+      "extracted_sha256": "f96f9e4544bf99e4c634d50cb89530de01b311c6a450ed26100fdc237f93769d",
+      "size_bytes": 26701,
+      "adapted": true
+    },
+    {
+      "path": "test_mri_epi_phase_probe.py",
+      "source_sha256": "fc474ee640a91b74067fbd800bb16824bfe6e06bc7076768d39b2f2f40d06b47",
+      "extracted_sha256": "fc474ee640a91b74067fbd800bb16824bfe6e06bc7076768d39b2f2f40d06b47",
+      "size_bytes": 6398,
+      "adapted": false
+    },
+    {
+      "path": "test_mri_followup_checks.py",
+      "source_sha256": "57bc0a7406eaea083a5c62b366e2136b9c8a7fab23f256c8b8c272164a4bd12f",
+      "extracted_sha256": "57bc0a7406eaea083a5c62b366e2136b9c8a7fab23f256c8b8c272164a4bd12f",
+      "size_bytes": 13044,
+      "adapted": false
+    },
+    {
+      "path": "test_mri_rs_reference.py",
+      "source_sha256": "ebcad5d41c6f9bac50b9be94cd90d06544df616cbd3b7be690a7caa5cf25f289",
+      "extracted_sha256": "ebcad5d41c6f9bac50b9be94cd90d06544df616cbd3b7be690a7caa5cf25f289",
+      "size_bytes": 7882,
+      "adapted": false
+    },
+    {
+      "path": "test_mri_transport_benchmark.py",
+      "source_sha256": "c20489077bf2342d0f7281b271379b89b65cb4317de3306d1c5481f0382f1fd5",
+      "extracted_sha256": "c20489077bf2342d0f7281b271379b89b65cb4317de3306d1c5481f0382f1fd5",
+      "size_bytes": 14986,
+      "adapted": false
+    }
+  ]
+}

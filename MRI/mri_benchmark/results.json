@@ -1,0 +1,1987 @@
+{
+  "scope": "Synthetic single-coil discrete Fourier fixture; no patient or scanner data.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "runs": 20,
+  "first_seed": 20260909,
+  "primary": {
+    "seed": 20260909,
+    "shape": [
+      64,
+      64
+    ],
+    "expected_snr_db": 40,
+    "realized_snr_db": 40.109716951214736,
+    "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+    "quantization_scale": 0.000493881103983502,
+    "quantization_complex_nrmse": 0.0005214649386268399,
+    "metrics": {
+      "sender_baseline": {
+        "complex_nrmse_vs_truth": 0.009902107696260999,
+        "magnitude_nrmse_vs_truth": 0.008440923054352532,
+        "complex_nrmse_vs_sender": 0.0
+      },
+      "damaged_transport": {
+        "complex_nrmse_vs_truth": 2.148429296285676,
+        "magnitude_nrmse_vs_truth": 1.8592357684037626,
+        "complex_nrmse_vs_sender": 2.14836474549575
+      },
+      "recovered_transport": {
+        "complex_nrmse_vs_truth": 0.009902107696260999,
+        "magnitude_nrmse_vs_truth": 0.008440923054352532,
+        "complex_nrmse_vs_sender": 0.0
+      },
+      "half_sampling": {
+        "complex_nrmse_vs_truth": 0.5478535167255417,
+        "magnitude_nrmse_vs_truth": 0.4887626663872509,
+        "complex_nrmse_vs_sender": 0.5477389410572322
+      },
+      "complementary_acquisition": {
+        "complex_nrmse_vs_truth": 0.009902107696260999,
+        "magnitude_nrmse_vs_truth": 0.008440923054352532,
+        "complex_nrmse_vs_sender": 0.0
+      }
+    },
+    "digital_transport": {
+      "payload_bytes": 16384,
+      "frame_bytes": 256,
+      "frames": 64,
+      "changed_bytes": 64,
+      "changed_byte_fraction": 0.00390625,
+      "corrected_frames": 64,
+      "rejected_frames": 0,
+      "byte_identical_recovery": true,
+      "payload_sha256": "e563c11ae743edbe9509fc76eaa21cdde56da6140396247946863d30f32e126e",
+      "metadata_bytes_per_full_frame_lower_bound": 38,
+      "metadata_fraction_lower_bound": 0.1484375,
+      "decoder_seconds_local_python_not_scanner_benchmark": 0.0014037499204277992
+    },
+    "operator_zeta": {
+      "full_sampling": {
+        "input_dimension": 4096,
+        "zeta_at_0": 4096,
+        "zeta_at_1": 4096.0,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10
+      },
+      "corrupted_full_sampling": {
+        "input_dimension": 4096,
+        "zeta_at_0": 4096,
+        "zeta_at_1": 4096.0,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10
+      },
+      "half_sampling": {
+        "input_dimension": 4096,
+        "zeta_at_0": 2048,
+        "zeta_at_1": 2048.0,
+        "nullity": 2048,
+        "eigenvalue_tolerance": 1e-10
+      },
+      "after_extra_acquisition": {
+        "input_dimension": 4096,
+        "zeta_at_0": 4096,
+        "zeta_at_1": 4096.0,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10
+      }
+    },
+    "ambiguity_control": {
+      "unmeasured_perturbation_nrmse": 0.2500000000000003,
+      "change_to_measured_kspace_norm": 0.0,
+      "extra_complex_samples_needed_for_complement": 2048,
+      "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+    }
+  },
+  "summary": {
+    "byte_identical_recoveries": 20,
+    "corrected_frames": 1280,
+    "complex_nrmse_vs_truth": {
+      "sender_baseline": {
+        "min": 0.009842073923417809,
+        "mean": 0.010005806792735269,
+        "max": 0.010253460913657659
+      },
+      "damaged_transport": {
+        "min": 1.4395950035372511,
+        "mean": 2.1110740669695924,
+        "max": 2.4384639434372635
+      },
+      "recovered_transport": {
+        "min": 0.009842073923417809,
+        "mean": 0.010005806792735269,
+        "max": 0.010253460913657659
+      },
+      "half_sampling": {
+        "min": 0.5478513421297966,
+        "mean": 0.5478532105692169,
+        "max": 0.547856640058815
+      },
+      "complementary_acquisition": {
+        "min": 0.009842073923417809,
+        "mean": 0.010005806792735269,
+        "max": 0.010253460913657659
+      }
+    }
+  },
+  "negative_controls": {
+    "two_moment_collision": {
+      "same_moments": true,
+      "released_payload": false,
+      "statuses": [
+        "rejected"
+      ]
+    },
+    "multi_error_miscorrection": {
+      "moment_decoder_candidate": [
+        3,
+        0,
+        3
+      ],
+      "candidate_is_original": false,
+      "released_payload": false,
+      "statuses": [
+        "rejected"
+      ]
+    },
+    "damage_before_reference": {
+      "preserved_not_corrected": true
+    },
+    "rank_is_not_conditioning": {
+      "well_conditioned": {
+        "input_dimension": 3,
+        "zeta_at_0": 3,
+        "zeta_at_1": 3.0,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10
+      },
+      "ill_conditioned": {
+        "input_dimension": 3,
+        "zeta_at_0": 3,
+        "zeta_at_1": 10002.0,
+        "nullity": 0,
+        "eigenvalue_tolerance": 1e-10
+      }
+    },
+    "rank_identity_without_projection": {
+      "normal_eigenvalues": [
+        0.0,
+        0.25,
+        4.0
+      ],
+      "normal_is_projection": false,
+      "spectral_summary": {
+        "input_dimension": 3,
+        "zeta_at_0": 2,
+        "zeta_at_1": 4.25,
+        "nullity": 1,
+        "eigenvalue_tolerance": 1e-10
+      }
+    },
+    "reference_channel_outside_guarantee": {
+      "wrong_moments_intact_digest_released_payload": false,
+      "coherently_replaced_data_and_references_are_accepted": true,
+      "interpretation": "Detection is not reference repair; coherent replacement needs an independent trust boundary."
+    }
+  },
+  "trials": [
+    {
+      "seed": 20260909,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.109716951214736,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.000493881103983502,
+      "quantization_complex_nrmse": 0.0005214649386268399,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009902107696260999,
+          "magnitude_nrmse_vs_truth": 0.008440923054352532,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.148429296285676,
+          "magnitude_nrmse_vs_truth": 1.8592357684037626,
+          "complex_nrmse_vs_sender": 2.14836474549575
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009902107696260999,
+          "magnitude_nrmse_vs_truth": 0.008440923054352532,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478535167255417,
+          "magnitude_nrmse_vs_truth": 0.4887626663872509,
+          "complex_nrmse_vs_sender": 0.5477389410572322
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009902107696260999,
+          "magnitude_nrmse_vs_truth": 0.008440923054352532,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "e563c11ae743edbe9509fc76eaa21cdde56da6140396247946863d30f32e126e",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014037499204277992
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260910,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.01426418374091,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004938725148463774,
+      "quantization_complex_nrmse": 0.0005206178995522329,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009997734846607306,
+          "magnitude_nrmse_vs_truth": 0.008487615692724316,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.9470811703494797,
+          "magnitude_nrmse_vs_truth": 1.6779215082743097,
+          "complex_nrmse_vs_sender": 1.9470026753414071
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009997734846607306,
+          "magnitude_nrmse_vs_truth": 0.008487615692724316,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478517001742986,
+          "magnitude_nrmse_vs_truth": 0.4887657501238506,
+          "complex_nrmse_vs_sender": 0.5478162537024205
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009997734846607306,
+          "magnitude_nrmse_vs_truth": 0.008487615692724316,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "10deb0562fc658b31bc78db68d5d8d9edd3203c124c4126c6a4dcfe9d03c123b",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.00142858293838799
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260911,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.01311149060069,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004938556221534368,
+      "quantization_complex_nrmse": 0.000525818161293966,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009995652547948836,
+          "magnitude_nrmse_vs_truth": 0.00851095323415865,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.9492588574442096,
+          "magnitude_nrmse_vs_truth": 1.6775293933817594,
+          "complex_nrmse_vs_sender": 1.9488460403059458
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009995652547948836,
+          "magnitude_nrmse_vs_truth": 0.00851095323415865,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.547853456609768,
+          "magnitude_nrmse_vs_truth": 0.48876031752430266,
+          "complex_nrmse_vs_sender": 0.5478497526510352
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009995652547948836,
+          "magnitude_nrmse_vs_truth": 0.00851095323415865,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "c9e054aa8af976ea511c83c5f1861c5e6a1fd5d40e3bacc685b6bcf9df52bec0",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.001444124849513173
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260912,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.064559460736774,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939297657282225,
+      "quantization_complex_nrmse": 0.0005261413186238669,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009938197023172236,
+          "magnitude_nrmse_vs_truth": 0.008478654482452377,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.0471942198553936,
+          "magnitude_nrmse_vs_truth": 1.7633081797421766,
+          "complex_nrmse_vs_sender": 2.0468061968829536
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009938197023172236,
+          "magnitude_nrmse_vs_truth": 0.008478654482452377,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478525368356771,
+          "magnitude_nrmse_vs_truth": 0.4887536098929945,
+          "complex_nrmse_vs_sender": 0.5478137688756891
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009938197023172236,
+          "magnitude_nrmse_vs_truth": 0.008478654482452377,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "d663a9da4a528a302c79b018de408b1f300f8ec410027526abb300851e48311d",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0013785830233246088
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260913,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.021356320988204,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.000494023148985636,
+      "quantization_complex_nrmse": 0.0005254275659310518,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009981862021829713,
+          "magnitude_nrmse_vs_truth": 0.008521598669899655,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.803521948106219,
+          "magnitude_nrmse_vs_truth": 1.5511595369668245,
+          "complex_nrmse_vs_sender": 1.8031168781844447
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009981862021829713,
+          "magnitude_nrmse_vs_truth": 0.008521598669899655,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478520616072041,
+          "magnitude_nrmse_vs_truth": 0.4887526101091225,
+          "complex_nrmse_vs_sender": 0.5477737484560533
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009981862021829713,
+          "magnitude_nrmse_vs_truth": 0.008521598669899655,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "09c0ae5caaa4d93f64def36a5bc49173ce107c91cd6fbbc852d8c7e59f18aa7c",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0013697920367121696
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260914,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.06753992473152,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.000493884222365183,
+      "quantization_complex_nrmse": 0.0005340943031560653,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009933466421396505,
+          "magnitude_nrmse_vs_truth": 0.008454340599497848,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.404233207885744,
+          "magnitude_nrmse_vs_truth": 2.09471944041833,
+          "complex_nrmse_vs_sender": 2.4037659190391203
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009933466421396505,
+          "magnitude_nrmse_vs_truth": 0.008454340599497848,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478529982583421,
+          "magnitude_nrmse_vs_truth": 0.48876124489391265,
+          "complex_nrmse_vs_sender": 0.5478938449149763
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009933466421396505,
+          "magnitude_nrmse_vs_truth": 0.008454340599497848,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "1e4b6fd9f15d56b081cc08b4ab6da241a706d8b4c61cce86ae05b42df9e34a4d",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014519589021801949
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260915,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.95260658902415,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939747327559474,
+      "quantization_complex_nrmse": 0.0005258521342091273,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010073054764423049,
+          "magnitude_nrmse_vs_truth": 0.008581002639450554,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.4235192375166905,
+          "magnitude_nrmse_vs_truth": 2.1117214448568693,
+          "complex_nrmse_vs_sender": 2.422929737851404
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010073054764423049,
+          "magnitude_nrmse_vs_truth": 0.008581002639450554,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478555532056177,
+          "magnitude_nrmse_vs_truth": 0.4887624103567739,
+          "complex_nrmse_vs_sender": 0.5478931368081118
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010073054764423049,
+          "magnitude_nrmse_vs_truth": 0.008581002639450554,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "b17dd263338b371800ee75f0b6f3cd721426abd154271cbcd9c5fd69b9f2cb30",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.001451958203688264
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260916,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.791214828593596,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939653908186071,
+      "quantization_complex_nrmse": 0.0005264797382646832,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010253460913657659,
+          "magnitude_nrmse_vs_truth": 0.008682486696882433,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.2628508578392816,
+          "magnitude_nrmse_vs_truth": 1.9621920445600636,
+          "complex_nrmse_vs_sender": 2.262638988894196
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010253460913657659,
+          "magnitude_nrmse_vs_truth": 0.008682486696882433,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.547856640058815,
+          "magnitude_nrmse_vs_truth": 0.4887604766197037,
+          "complex_nrmse_vs_sender": 0.5478569518746733
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010253460913657659,
+          "magnitude_nrmse_vs_truth": 0.008682486696882433,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "aca436772b5efe637ce7063239635d7d80279bd14bbf39bc96e44b3f060e63e8",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014727090019732714
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260917,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.03889095339784,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939335272341719,
+      "quantization_complex_nrmse": 0.0005314769016682733,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009976329415933377,
+          "magnitude_nrmse_vs_truth": 0.008635565556281801,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.798222476614659,
+          "magnitude_nrmse_vs_truth": 1.5411073597004301,
+          "complex_nrmse_vs_sender": 1.7982225850336897
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009976329415933377,
+          "magnitude_nrmse_vs_truth": 0.008635565556281801,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478516853628346,
+          "magnitude_nrmse_vs_truth": 0.48877351589746987,
+          "complex_nrmse_vs_sender": 0.5477404347776974
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009976329415933377,
+          "magnitude_nrmse_vs_truth": 0.008635565556281801,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "d31995f50610d2fbef72949e378ae87359fc3c223dabd5882c133dbcf4c16606",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014743329957127571
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260918,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.95425208471316,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939988086546352,
+      "quantization_complex_nrmse": 0.0005295314387006477,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010066872704990924,
+          "magnitude_nrmse_vs_truth": 0.008615428878856822,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.4384639434372635,
+          "magnitude_nrmse_vs_truth": 2.1264200304105336,
+          "complex_nrmse_vs_sender": 2.4379899155778233
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010066872704990924,
+          "magnitude_nrmse_vs_truth": 0.008615428878856822,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478531602440936,
+          "magnitude_nrmse_vs_truth": 0.4887487688766177,
+          "complex_nrmse_vs_sender": 0.5476579026390364
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010066872704990924,
+          "magnitude_nrmse_vs_truth": 0.008615428878856822,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "c77ab017bd981350856b0b3753c325771218cd189db2d90a15aa1de09b156389",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014559580013155937
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260919,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.982926442326466,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939693553105638,
+      "quantization_complex_nrmse": 0.0005312008654880614,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010036564429370046,
+          "magnitude_nrmse_vs_truth": 0.008517464726736737,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.886311132809304,
+          "magnitude_nrmse_vs_truth": 1.6269858223430702,
+          "complex_nrmse_vs_sender": 1.886380088473621
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010036564429370046,
+          "magnitude_nrmse_vs_truth": 0.008517464726736737,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478532072020541,
+          "magnitude_nrmse_vs_truth": 0.4887573452029875,
+          "complex_nrmse_vs_sender": 0.5476934917962065
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010036564429370046,
+          "magnitude_nrmse_vs_truth": 0.008517464726736737,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "4b2eed844c0d2733fbd49e7199904d964a65246b34ec96c8c33f1543e0fc4714",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014946248847991228
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260920,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.00296554792553,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939157301875012,
+      "quantization_complex_nrmse": 0.0005283037748915712,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010005595639253436,
+          "magnitude_nrmse_vs_truth": 0.008542186990815102,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.9927050210050434,
+          "magnitude_nrmse_vs_truth": 1.7141314690047444,
+          "complex_nrmse_vs_sender": 1.992732631001854
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010005595639253436,
+          "magnitude_nrmse_vs_truth": 0.008542186990815102,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478544830325015,
+          "magnitude_nrmse_vs_truth": 0.48877062515149255,
+          "complex_nrmse_vs_sender": 0.54788767550076
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010005595639253436,
+          "magnitude_nrmse_vs_truth": 0.008542186990815102,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "58e0e38626535ebf249670315abe422ee48e7543b00eb1ba59ae3b7f04583d26",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014799160417169333
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260921,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.99759496701706,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939743699833264,
+      "quantization_complex_nrmse": 0.0005295751198817383,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010017345152135116,
+          "magnitude_nrmse_vs_truth": 0.008555446961595372,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.329346804538051,
+          "magnitude_nrmse_vs_truth": 2.019939025005192,
+          "complex_nrmse_vs_sender": 2.3294724623964713
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010017345152135116,
+          "magnitude_nrmse_vs_truth": 0.008555446961595372,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478542224980326,
+          "magnitude_nrmse_vs_truth": 0.48876672574289703,
+          "complex_nrmse_vs_sender": 0.5478164991817981
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010017345152135116,
+          "magnitude_nrmse_vs_truth": 0.008555446961595372,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "689da33cae778f53e4c1148f5a04bc923992b97a037eaecfb7261ebd2e681eef",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014974588993936777
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260922,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.07000516628024,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939756413777992,
+      "quantization_complex_nrmse": 0.000523261873086103,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009930848260860112,
+          "magnitude_nrmse_vs_truth": 0.008446980605863826,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.201370125404078,
+          "magnitude_nrmse_vs_truth": 1.906531416868681,
+          "complex_nrmse_vs_sender": 2.200955134006816
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009930848260860112,
+          "magnitude_nrmse_vs_truth": 0.008446980605863826,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478527181364962,
+          "magnitude_nrmse_vs_truth": 0.48876573165247333,
+          "complex_nrmse_vs_sender": 0.5478034020906779
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009930848260860112,
+          "magnitude_nrmse_vs_truth": 0.008446980605863826,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "652c3d7971b92b1794f0789b40f8510b063c6be64bb7fe03321023b4f81c38d9",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0013805001508444548
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260923,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.92527490023446,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004937462831720599,
+      "quantization_complex_nrmse": 0.0005276676584583992,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010106240928129628,
+          "magnitude_nrmse_vs_truth": 0.00862573187059874,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.334512701546403,
+          "magnitude_nrmse_vs_truth": 2.0190774934827194,
+          "complex_nrmse_vs_sender": 2.3342833934639975
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010106240928129628,
+          "magnitude_nrmse_vs_truth": 0.00862573187059874,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478546495650009,
+          "magnitude_nrmse_vs_truth": 0.48876593661986006,
+          "complex_nrmse_vs_sender": 0.5478120065092869
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010106240928129628,
+          "magnitude_nrmse_vs_truth": 0.00862573187059874,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "85f9296e1a2c2a9bc0001c88b43fdaeda5d6b761e968b523bd12796fd916974a",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014065001159906387
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260924,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.98611926397823,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004938426186742947,
+      "quantization_complex_nrmse": 0.0005204614512503319,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010039090961500947,
+          "magnitude_nrmse_vs_truth": 0.00861365365826392,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 1.4395950035372511,
+          "magnitude_nrmse_vs_truth": 1.226258150038132,
+          "complex_nrmse_vs_sender": 1.439544525969959
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010039090961500947,
+          "magnitude_nrmse_vs_truth": 0.00861365365826392,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478524668689043,
+          "magnitude_nrmse_vs_truth": 0.4887703902701877,
+          "complex_nrmse_vs_sender": 0.5477507108830082
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010039090961500947,
+          "magnitude_nrmse_vs_truth": 0.00861365365826392,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "bf16b89747bb3a1fd8a4c2f22bf037c64bdeac53648011be658619eb8531d748",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0014275419525802135
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260925,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 39.933420487321186,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939230045612645,
+      "quantization_complex_nrmse": 0.0005278624689297993,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.010085108232155153,
+          "magnitude_nrmse_vs_truth": 0.008649360819844926,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.2402209974913316,
+          "magnitude_nrmse_vs_truth": 1.9412330333272505,
+          "complex_nrmse_vs_sender": 2.2397744538546025
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.010085108232155153,
+          "magnitude_nrmse_vs_truth": 0.008649360819844926,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478535975508304,
+          "magnitude_nrmse_vs_truth": 0.4887680354401804,
+          "complex_nrmse_vs_sender": 0.5479045001336141
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.010085108232155153,
+          "magnitude_nrmse_vs_truth": 0.008649360819844926,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "ef6906fac9afef880e9014c6a092c71594bf4e96fc26b577b2c9a6a4588fc09d",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0013675841037184
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260926,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.004392138639474,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.000493951618544024,
+      "quantization_complex_nrmse": 0.0005229505136992505,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.01000404316762878,
+          "magnitude_nrmse_vs_truth": 0.008522058544542395,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.2734491340999066,
+          "magnitude_nrmse_vs_truth": 1.9628384453407473,
+          "complex_nrmse_vs_sender": 2.273474784536013
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.01000404316762878,
+          "magnitude_nrmse_vs_truth": 0.008522058544542395,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478523254254463,
+          "magnitude_nrmse_vs_truth": 0.4887716166284223,
+          "complex_nrmse_vs_sender": 0.5477919790912298
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.01000404316762878,
+          "magnitude_nrmse_vs_truth": 0.008522058544542395,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "5dd6ef1cce52ebd6dac08f2d264b2bd1650f73dd52abd80736e2dbbdc59f0799",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.001360124908387661
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260927,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.06762915086098,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004940786558717155,
+      "quantization_complex_nrmse": 0.0005263919801479615,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009930486804033748,
+          "magnitude_nrmse_vs_truth": 0.008497041442,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.0979897495264184,
+          "magnitude_nrmse_vs_truth": 1.810463719458736,
+          "complex_nrmse_vs_sender": 2.097543542782397
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009930486804033748,
+          "magnitude_nrmse_vs_truth": 0.008497041442,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478518898930846,
+          "magnitude_nrmse_vs_truth": 0.4887559486486835,
+          "complex_nrmse_vs_sender": 0.5477354353403756
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009930486804033748,
+          "magnitude_nrmse_vs_truth": 0.008497041442,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "1c7a6e6fe561952da3a196093a456175735be5be4af95bb21c0338c3f2586210",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.00137562514282763
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    },
+    {
+      "seed": 20260928,
+      "shape": [
+        64,
+        64
+      ],
+      "expected_snr_db": 40,
+      "realized_snr_db": 40.14576014042835,
+      "fft_roundtrip_nrmse": 2.8991081383530783e-16,
+      "quantization_scale": 0.0004939560302974634,
+      "quantization_complex_nrmse": 0.0005261479849734968,
+      "metrics": {
+        "sender_baseline": {
+          "complex_nrmse_vs_truth": 0.009842073923417809,
+          "magnitude_nrmse_vs_truth": 0.008353797119869524,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "damaged_transport": {
+          "complex_nrmse_vs_truth": 2.2032054540994404,
+          "magnitude_nrmse_vs_truth": 1.9006624904353602,
+          "complex_nrmse_vs_sender": 2.202936720331051
+        },
+        "recovered_transport": {
+          "complex_nrmse_vs_truth": 0.009842073923417809,
+          "magnitude_nrmse_vs_truth": 0.008353797119869524,
+          "complex_nrmse_vs_sender": 0.0
+        },
+        "half_sampling": {
+          "complex_nrmse_vs_truth": 0.5478513421297966,
+          "magnitude_nrmse_vs_truth": 0.4887718719366789,
+          "complex_nrmse_vs_sender": 0.547851315475188
+        },
+        "complementary_acquisition": {
+          "complex_nrmse_vs_truth": 0.009842073923417809,
+          "magnitude_nrmse_vs_truth": 0.008353797119869524,
+          "complex_nrmse_vs_sender": 0.0
+        }
+      },
+      "digital_transport": {
+        "payload_bytes": 16384,
+        "frame_bytes": 256,
+        "frames": 64,
+        "changed_bytes": 64,
+        "changed_byte_fraction": 0.00390625,
+        "corrected_frames": 64,
+        "rejected_frames": 0,
+        "byte_identical_recovery": true,
+        "payload_sha256": "f6a62cd5b95ac8b52d0ade3cb7dc1f557e423f446b4603604b8203692545c86c",
+        "metadata_bytes_per_full_frame_lower_bound": 38,
+        "metadata_fraction_lower_bound": 0.1484375,
+        "decoder_seconds_local_python_not_scanner_benchmark": 0.0013908329419791698
+      },
+      "operator_zeta": {
+        "full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "corrupted_full_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "half_sampling": {
+          "input_dimension": 4096,
+          "zeta_at_0": 2048,
+          "zeta_at_1": 2048.0,
+          "nullity": 2048,
+          "eigenvalue_tolerance": 1e-10
+        },
+        "after_extra_acquisition": {
+          "input_dimension": 4096,
+          "zeta_at_0": 4096,
+          "zeta_at_1": 4096.0,
+          "nullity": 0,
+          "eigenvalue_tolerance": 1e-10
+        }
+      },
+      "ambiguity_control": {
+        "unmeasured_perturbation_nrmse": 0.2500000000000003,
+        "change_to_measured_kspace_norm": 0.0,
+        "extra_complex_samples_needed_for_complement": 2048,
+        "interpretation": "Non-injective acquisition; known mask/rank cannot recover missing values."
+      }
+    }
+  ],
+  "limits": [
+    "At most one changed byte per frame; no erasure/insertion/burst guarantee.",
+    "Header and reference channel assumed trusted and intact; their protection costs extra.",
+    "SHA-256 is an integrity check, not authentication or an absolute non-collision proof.",
+    "No removal of acquisition noise, aliasing, motion, field inhomogeneity or coil effects.",
+    "Extra-acquisition control has access to genuinely additional samples of a frozen object.",
+    "No clinical efficacy, scanner timing, comparison with a vendor codec, or Riemann-zeta benefit established."
+  ],
+  "preview_clipping_fractions": {
+    "truth": 0.0,
+    "sender_baseline": 0.00146484375,
+    "damaged_transport": 0.30224609375,
+    "recovered_transport": 0.00146484375,
+    "half_sampling": 0.0,
+    "complementary_acquisition": 0.00146484375
+  }
+}
