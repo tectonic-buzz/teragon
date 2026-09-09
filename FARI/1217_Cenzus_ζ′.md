@@ -33,4 +33,4 @@ $$\zeta(3)=\frac52\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^3\binom{2n}{n}}.$$
 
 Punkt $3/2$ nie jest odbiciem zera trywialnego, lecz $-\zeta'(3/2)=\sum_{m\ge1}\log m/m^{3/2}$ nadal występuje jako składnik porównawczy w analizie poprzedniej sumy. Nie wolno wykluczać takiego użycia na podstawie samego równania funkcyjnego.
 
-Przybliżenia i kontrola pochodnej dla $k=1$: [check_pol_notes.py](../FARI/tests/check_pol_notes.py). Nie traktujemy tego testu jako niezależnego dowodu tożsamości dla wszystkich $k$.
+Przybliżenia i kontrola pochodnej dla $k=1$: [check_pol_notes.py](tests/check_pol_notes.py). Nie traktujemy tego testu jako niezależnego dowodu tożsamości dla wszystkich $k$.

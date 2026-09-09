@@ -47,4 +47,4 @@ Odpowiada to przejściu od twierdzenia o lokalnej gładkości do globalnej miary
 - $-\zeta'(3/2)\approx3,932239737431$ jest poprawnym odczytem. Natomiast składnik $\log\log m$ trzeba zaczynać od $m=2$. Asymptotyka wyrazu przy dużym $m$ nie wyznacza sumy całego szeregu z pominięciem jego początku i reszty. „4,89” oraz „rozjazd 2,15” nie są tu uzasadnioną wartością graniczną ani oszacowaniem błędu.
 - Zastąpienie funkcji Bessela innym wyrazem **definiuje nową sumę**, nie zachowuje wcześniejszej tożsamości dla $S$. Zdania „nie jest funkcją ζ”, „nikt nie policzył” i „nie domyka się” nie zostały wykazane. Brak podanej postaci zamkniętej nie jest dowodem jej niemożliwości.
 
-Rachunki do odtworzenia: [check_pol_notes.py](../FARI/tests/check_pol_notes.py).
+Rachunki do odtworzenia: [check_pol_notes.py](tests/check_pol_notes.py).

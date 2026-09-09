@@ -1,4 +1,4 @@
-"""Finite checks for the review comments in PÓŁ; not a proof of Firoozbakht.
+"""Finite checks for the review comments in FARI; not a proof of Firoozbakht.
 Run from repository root: python3 FARI/tests/check_pol_notes.py
 Requires NumPy through check_rh_formulas; float64 checks are not intervals.
 """
