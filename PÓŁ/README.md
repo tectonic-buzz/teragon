@@ -25,3 +25,5 @@ Rczeczywise i urojone rozmowy zespolone, nie po kolei... Ot tak!
 - [`1151` Mobius](1151_Mobius.md)
 - [`1153` Butelka Kleina](1153_Butelka_Kleina.md)
 - [`9999987899999` FARI — فری · STWIERDZAM ŻE NIE TWIERDZĘ](../FARI/README.md)
+- [`1187` Firoozbakht — seria](1187_Firoozbakht_seria.md)
+- [`1217` Cenzus ζ′](1217_Cenzus_ζ′.md)
