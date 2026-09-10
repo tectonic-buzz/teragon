@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "source": {
+    "description": "Zewnętrzny pełny eksport rozmowy przekazany 2026-09-09; lokalna ścieżka nie jest częścią pakietu.",
+    "sha256": "ab5c2c65fc018ef30b6ba5ace979b1fda9f9158f491aa9fccd1429d08c38344d",
+    "line_numbering": "1-based, inclusive",
+    "window": [
+      19758,
+      20244
+    ],
+    "conversation_timestamp": null,
+    "timestamp_note": "Eksport nie zawiera znaczników czasu przy tych wypowiedziach; data przekazania nie jest datą rozmowy."
+  },
+  "output": "01_DIALOG.md",
+  "added_header": "# Loksodroma, kwadronał i równanie Fermata\n\n",
+  "assembly": "For each segment: append its HTML source-lines comment, a blank line, then source lines after the declared quote-prefix removal and listed editorial corrections. Separate segments with a blank line and terminate the document with LF.",
+  "editorial_corrections": [
+    {
+      "source_line": 19833,
+      "before": "loksodrobie",
+      "after": "loksodromie",
+      "note": "Korekta literówki zastana w sprawdzonej wersji przed pierwszym commitem; zachowana bez cofania."
+    }
+  ],
+  "segments": [
+    {
+      "start": 19758,
+      "end": 19758,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 19779,
+      "end": 19822,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 19831,
+      "end": 19893,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 19911,
+      "end": 19945,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 19957,
+      "end": 19976,
+      "quote_depth_removed": 1
+    },
+    {
+      "start": 19978,
+      "end": 19980,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 19982,
+      "end": 20003,
+      "quote_depth_removed": 1
+    },
+    {
+      "start": 20005,
+      "end": 20005,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20008,
+      "end": 20124,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20139,
+      "end": 20170,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20185,
+      "end": 20244,
+      "quote_depth_removed": 0
+    }
+  ],
+  "omissions": [
+    {
+      "start": 19759,
+      "end": 19778,
+      "reason": "Komentarz roboczy, log czynności i znaczniki eksportu."
+    },
+    {
+      "start": 19823,
+      "end": 19830,
+      "reason": "Odwołanie do osobnej konstrukcji i jej parametryzacji, poza zakresem tego wyciągu."
+    },
+    {
+      "start": 19894,
+      "end": 19910,
+      "reason": "Komentarz roboczy, log wyszukiwania i kompakcji."
+    },
+    {
+      "start": 19946,
+      "end": 19956,
+      "reason": "Komentarz roboczy i log wyszukiwania."
+    },
+    {
+      "start": 19977,
+      "end": 19977,
+      "reason": "Pusty wiersz cytowania eksportu."
+    },
+    {
+      "start": 19981,
+      "end": 19981,
+      "reason": "Pusty wiersz cytowania eksportu."
+    },
+    {
+      "start": 20004,
+      "end": 20004,
+      "reason": "Pusty wiersz cytowania eksportu."
+    },
+    {
+      "start": 20006,
+      "end": 20007,
+      "reason": "Zamknięcie znacznika eksportu i pusty wiersz."
+    },
+    {
+      "start": 20125,
+      "end": 20138,
+      "reason": "Komentarz roboczy i log wyszukiwania."
+    },
+    {
+      "start": 20171,
+      "end": 20184,
+      "reason": "Komentarz roboczy i log wyszukiwania."
+    }
+  ],
+  "extraction_boundary": "Wyciąg kończy się na wierszu 20244. Następna wypowiedź rozpoczyna osobną konstrukcję; nie została przeniesiona.",
+  "content_policy": "Wzory i przebieg rozmowy zachowane. Jedna korekta literówki została wymieniona w editorial_corrections. Usunięto wskazane fragmenty oraz jedną wspólną warstwę cytowania dwóch odpowiedzi. Nie jest to walidacja matematyczna."
+}

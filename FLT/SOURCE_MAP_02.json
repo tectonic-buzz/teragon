@@ -1,0 +1,80 @@
+{
+  "schema_version": 2,
+  "source": {
+    "description": "Ten sam zewnętrzny pełny eksport rozmowy co w mapie części pierwszej.",
+    "sha256": "ab5c2c65fc018ef30b6ba5ace979b1fda9f9158f491aa9fccd1429d08c38344d",
+    "line_numbering": "1-based, inclusive",
+    "window": [
+      20246,
+      20572
+    ],
+    "conversation_timestamp": null
+  },
+  "output": "02_DIALOG.md",
+  "continued_from": "01_DIALOG.md",
+  "added_header": "# Równanie kwadratowe, granica i zatrzymanie loksodromy\n\n",
+  "assembly": "For each segment: append its HTML source-lines comment, a blank line, and its unchanged source lines. Separate blocks with a blank line and terminate with LF.",
+  "segments": [
+    {
+      "start": 20246,
+      "end": 20246,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20280,
+      "end": 20298,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20299,
+      "end": 20303,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20304,
+      "end": 20369,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20388,
+      "end": 20418,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20431,
+      "end": 20491,
+      "quote_depth_removed": 0
+    },
+    {
+      "start": 20508,
+      "end": 20572,
+      "quote_depth_removed": 0
+    }
+  ],
+  "redactions": [],
+  "insertions": [],
+  "omissions": [
+    {
+      "start": 20247,
+      "end": 20279,
+      "reason": "Komentarz roboczy, log czynności i znaczniki eksportu."
+    },
+    {
+      "start": 20370,
+      "end": 20387,
+      "reason": "Komentarz roboczy i log wyszukiwania."
+    },
+    {
+      "start": 20419,
+      "end": 20430,
+      "reason": "Komentarz roboczy i log wyszukiwania."
+    },
+    {
+      "start": 20492,
+      "end": 20507,
+      "reason": "Komentarz roboczy i log wyszukiwania."
+    }
+  ],
+  "extraction_boundary": "Ostatnia odpowiedź kończy się na wierszu 20572. Kolejny temat, niwelacja instrumentalna, zaczyna się w źródle na wierszu 20574 i nie jest częścią tego pliku.",
+  "content_policy": "Na prośbę użytkownika przywrócono w całości wcześniej pominięte części zdań i dwa akapity, również odwołania do odrębnej konstrukcji. Wypowiedzi pozostawiono do własnej redakcji użytkownika. Pominięto wyłącznie wskazane komentarze robocze, logi i znaczniki eksportu. Nie jest to walidacja matematyczna ani nowy dowód FLT."
+}
