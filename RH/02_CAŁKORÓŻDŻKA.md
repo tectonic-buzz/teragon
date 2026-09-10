@@ -121,7 +121,7 @@ $h$ jest dodatnio określona na osi rzeczywistej, nawet $h(t)\ge1$, ale ma zera 
 
 ---
 
-### Uwagi recenzenckie, append-only
+### Intuicyjności
 
 Narracja powyżej pozostaje niezmieniona.
 
@@ -132,3 +132,11 @@ Narracja powyżej pozostaje niezmieniona.
 **Co zweryfikowano poza plikiem.** Współczynniki szeregu $z/(e^z-1)$: $1,-1/2,1/6,0,-1/30,0,1/42$ dokładnie wymiernie; Euler–Maclaurin $\zeta(3)$ z $N=9,m=4$ daje błąd $-1{,}40773534529\cdot10^{-12}$ zgodny z plikiem do 10 cyfr; niezależna kontrola szeregiem Apéry'ego (150 wyrazów) $\zeta(3)$ = 1,2020569031595942854; $\theta(1/t)=\sqrt{t}\,\theta(t)$ do $10^{-60}$ dla $t=0{,}3$ i $t=2$; $\xi(2{,}7)$ dwiema drogami do $10^{-62}$; tożsamości Hurwitza i antyróżnicy wielomianów Bernoulliego potwierdzone wymiernie i numerycznie.
 
 **Czego te uwagi nie mówią.** Nie dołączono dowodu RH; nie wykazano rozbieżności między ξ a Eulerem–Maclaurinem; nie wykazano, że trzy koła tworzą zamknięty system. Kontrola w §4 (funkcja $2+\cos z$ z dodatnią miarą i zerami poza osią) nadal zamyka pokusę przeniesienia dodatniości Fouriera na rzeczywistość zer.
+
+### Uwagi recenzenckie, append-only — wide-intuitionist
+
+Narracja (linia 11) ramuje czwarte koło jako „zasłonięte" — tego samego rodzaju co trzy widoczne, tylko niewidoczne. Ale kontrprzykład z §4 ($2+\cos z$: dodatnia miara Fouriera, zera poza osią) pokazuje, że dodatniość, którą widzi Kelvin, to inny gatunek niż dodatniość Weila — trzy koła produkują dodatniość Fouriera, a §4 dowodzi, że ten gatunek nie zmusza zer na prostą. Czwarte koło nie jest zasłonięte; jest innego rodzaju. Szukać trzeba nośnika dodatniości Weila, a nie lepszego okna na dodatniość Fouriera.
+
+**Redakcyjne dopięcie, append-only.**
+
+Cięcie „inny gatunek, nie zasłona" podtrzymuję w pełni — świadek z §4 i analiza placka w [01](01_RAMIFIKSACJA.md) domykają je z obu stron; nic tu nie jest zbyt miękkie ani zbyt grube. Recenzja przegapia dwa poślizgi. Linia 5 nazywa $1,-\tfrac12,\tfrac16,0,-\tfrac1{30},0,\tfrac1{42}$ „współczynnikami" $x/(e^x-1)$, a to liczby $B_k$ — współczynniki są równe $B_k/k!$: $1,-\tfrac12,\tfrac1{12},0,-\tfrac1{720},0,\tfrac1{30240}$ (ten sam odczyt powtarza kontrola w sekcji **Intuicyjności**); zaś w R2 zerują się wyrazy przy potęgach parzystych $\ge2$ ($B_{2k+1}=0$), nie przy nieparzystych, i ta absencja koduje zera trywialne $\zeta(-2k)=0$, podczas gdy $\zeta(-1)=-B_2/2$ pochodzi z obecnego wyrazu $\tfrac1{12}D$ — to przypadek $k=1$ rodziny $\zeta(1-2k)$, którą R2 sam przytacza. Realna szczelina, którą R2 wyczuł, jest ta, którą §1 sam odnotowuje („podstawienie operatora $D$ pozostaje rachunkiem formalnym"), więc jego werdykt — ryzyko nadinterpretacji, nie błąd — pozostaje słuszny.
