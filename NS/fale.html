@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Wirujące wzory</title>
+<canvas id="c" width="640" height="480" style="display:block;margin:auto;background:#000;cursor:pointer"></canvas>
+<div id="info" style="text-align:center;padding:8px;color:#0f0;font:14px monospace"></div>
+</head>
+<body>
+<script>
+const c = document.getElementById('c'), ctx = c.getContext('2d');
+let t = 0;
+const W = c.width, H = c.height;
+let mode = 0;
+const names = ["Klein–Gordon","Schrödinger","Navier–Stokes"];
+
+function draw(){
+  ctx.clearRect(0,0,W,H);
+  t += 0.03;
+  const cx = W/2, cy = H/2;
+  for(let x=0;x<W;x+=4){
+    for(let y=0;y<H;y+=4){
+      const dx = (x-cx)/W*10, dy = (y-cy)/H*10;
+      const r2 = dx*dx+dy*dy;
+      let r,g,b;
+      if(mode===0){ // Klein-Gordon
+        const k = Math.sqrt(r2)*6;
+        const val = Math.sin(k-t*6)*Math.cos(k*2+t*3);
+        r = Math.sin(val*2)*255; g = Math.cos(val)*255; b = 128;
+      } else if(mode===1){ // Schrödinger
+        const th = Math.atan2(dy,dx);
+        const val = Math.sin(r2*3 - t*4) * Math.cos(th*6+t*2);
+        const col = (Math.sin(val*4)+1)/2;
+        r = col*255; g = 180; b = 255-col*200;
+      } else { // Navier-Stokes
+        const th = Math.atan2(dy,dx);
+        const rad = Math.sqrt(r2)*4;
+        const val = Math.sin(rad-t*4 + th*3);
+        const col = (Math.sin(val*2)+1)/2;
+        r = col*255; g = (1-col)*255; b = 255-col*150;
+      }
+      ctx.fillStyle = `rgb(${r|0},${g|0},${b|0})`;
+      ctx.fillRect(x,y,4,4);
+    }
+  }
+  document.getElementById('info').textContent = names[mode] + " — kliknij";
+  requestAnimationFrame(draw);
+}
+
+c.addEventListener('mousedown',()=>{mode=(mode+1)%3;});
+draw();
+</script>
+</body>
+</html>
