@@ -1,6 +1,5 @@
 # gh-pages: domyślnie ignoruj wszystko
 *
 !.gitignore
-
-# Nadpisz powyżsą regułę konkretnymi plikami, które mają trafić na stronę:
-#!index.html
+!index.html
+!assets/
