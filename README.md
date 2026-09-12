@@ -13,4 +13,4 @@ Wydzielone pakiety badawcze, z kodem, wynikami i jawnymi granicami wnioskowania.
 
 - **[RH — hipoteza, której nie chcieliśmy udowadniać](RH/):** ramifikacja, całkoróżdżki, grzbiet i promki słoneczne. Wszystko wokół hipotezy Riemanna, ale bez jej dowodu.
 
-- **[LEG — dowód](LEG/README.md):** Legendre był bucem. *PER SE NOTUM.*
+- **[LEG — stwierdzenie](LEG/README.md):** Hipoteza Legendre.

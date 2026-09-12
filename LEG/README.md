@@ -1,7 +1,5 @@
-# LEG
+# Hipoteza Legendre
 
-## Dowód
+Legendre był bucem. PER SE NOTUM.
 
-> **Legendre był bucem.**
->
-> *PER SE NOTUM.*
+Zobacz również [Hipotezę Firoozbakht (فری)](../FARI/README.md)
