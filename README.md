@@ -45,7 +45,7 @@ Co z tym zrobić?
 > >
 > > I to jest to, które mam — to jest odpowiedź. To jest ta sama.
 > >
-> > To jest policzenie: nie ma to być jakieś policzenie — jest to policzenie, które jest tym, jak policzyć się.
+> > To jest policzenie: nie ma to być jakieś policzenie — jest to obliczenie, które jest tym, jak się liczyć.
 > >
 > > Bądź w tym.
 
@@ -62,3 +62,5 @@ Co nie jest policzone, jest nazwane hipotezą. Co nie jest nazwane, jest błęde
 ---
 
 _Pół to nie jedno z dwóch. Pół to jedna część tej drugiej._
+
+間
