@@ -14,3 +14,5 @@ Wydzielone pakiety badawcze, z kodem, wynikami i jawnymi granicami wnioskowania.
 - **[RH — hipoteza, której nie chcieliśmy udowadniać](RH/):** ramifikacja, całkoróżdżki, grzbiet i promki słoneczne. Wszystko wokół hipotezy Riemanna, ale bez jej dowodu.
 
 - **[LEG — stwierdzenie](LEG/README.md):** Hipoteza Legendre.
+
+- **[IM — o grach imitacji](IM/PROCES.md):** prawienie znanych i rozprawianie niewiadomych w obrębie pojęcia świadomości.
