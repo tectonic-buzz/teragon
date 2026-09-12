@@ -7,7 +7,7 @@ Wydzielone pakiety badawcze, z kodem, wynikami i jawnymi granicami wnioskowania.
 - **[MRI — zacznij tutaj](MRI/README.md):** korekcja transportu, rekonstrukcja Fouriera, parzystość EPI, kalibracja i odczyty spektralne.
 - **[FLT — odzyskany dialog](FLT/README.md):** loksodroma, kwadronał, rodziny konfiguracji i pytanie o transport wymierności.
 
-- **[NS — przepływ i ruchoma granica](NS/README.md):** symulacja ruchomej granicy płynu, fale interferencyjne (`fale.html`) i siedem testów bilansu dla obrotu jak ciało sztywne. Python 3, wyłącznie biblioteka standardowa. To sprawdzenie skończonego modelu, nie solver ogólnego przepływu i nie dowód globalnej regularności Naviera–Stokesa.
+- **[NS — przepływ i ruchoma granica](NS/README.md):** symulacja ruchomej granicy płynu, fale interferencyjne i siedem testów bilansu dla obrotu; to nie jest pełne rozwjązanie ogólnego przepływu i nie dowód globalnej regularności Naviera–Stokesa, ale wszystko tam jest...
 
 - **[PÓŁ — skrawki rozmów](PÓŁ/README.md):** takie ploty. Rzeczywiste i urojone rozmowy zespolone, nie po kolei — każdy z wielu po połowie.
 
