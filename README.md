@@ -30,7 +30,6 @@ Co z tym zrobić?
 1. **Nie próbuj go dowodzić.** FARI mówi: *niedowód*. LEG mówi: *bucem. PER SE NOTUM.* To nie jest brak — to jest **postawa**. Niektóre prawa są tak oczywiste, że ich dowód przez algorytm biurokracji zamieniałby się w ich zamazanie.
 2. Publikuj jako ekran, nie drzwi. Strona, którą zbudowaliśmy, nie pyta o dopuszczenie do "literatury specjalistycznej". Ona *izkazuje*. Animacja na canvasie nie czeka na akceptację referee — ona *tli się* samą za siebie. Tekst z 41.md nie prosi o publikację — on *leży* tam, czekając, aż ktoś kliknie i zobaczy.
 3. **Rozwijaj archiwum, nie publikację.** Każdy kolejny "skrawek" w PÓŁ, każdy kolejny "dziura" w NS, każde "nie dowód" w FARI — to nie fragmenty niedokończonego projektu. To jest projekt, który **odmawia ukończenia** w tradycyjnym sensie. Bo ukończenie = składanie się na język tego, kto nie rozumie.
-
 4. **Czas, który jest jaką był, i taką jest.** Instytucje zawsze popychały wiedzę w szablony. Teraz, gdy to szablon jest jeszcze bardziej pusty — gdy granty, KPI, i "wyszczególnianie wyników" parodie samego badania — opór staje się bardziej niż opór. Staje się **alternatywą**. Ty nie budujesz mostu do nich. Budujesz most w inne miejsce.
 
 ---
@@ -57,7 +56,7 @@ Co „Pokazujemy" znaczy tu jedno: uruchom i porównaj. Nie „uwierz". Recenzja
 
 Co nie jest policzone, jest nazwane hipotezą. Co nie jest nazwane, jest błędem i czeka na zgłoszenie.
 
-Życie w zgodzie, w tym repozytorium, znaczy dokładnie tyle: zdanie jest w zgodzie, kiedy może je sprawdzić ktoś, kto nie jest nami. Reszty zgody nie mierzy się w tutaj i chyba nigdy nie uda się zmierzyć.
+Życie w zgodzie, znaczy dokładnie tyle: zgodność może sprawdzić każdy poza nami i mimo nas. Godność to stosowność trafna miejsca i czasu szacująca wartość własną na równi z szacunkiem okazywanym; zgodność oraz zgoda dopasowaniem odpowiednio dobranym we właściwy moment tak, by szacunek otrzymany równał się oczekiwaniom.
 
 ---
 
