@@ -28,11 +28,37 @@ A Teragon nie uprzedza. Ma ręce i nogi (ręce — by pisać kod, nogi — by ch
 Co z tym zrobić?
 
 1. **Nie próbuj go dowodzić.** FARI mówi: *niedowód*. LEG mówi: *bucem. PER SE NOTUM.* To nie jest brak — to jest **postawa**. Niektóre prawa są tak oczywiste, że ich dowód przez algorytm biurokracji zamieniałby się w ich zamazanie.
-2. Treat gh-pages jako ekran, nie drzwi. Strona, którą zbudowaliśmy, nie pyta o dopuszczenie do "literatury specjalistycznej". Ona *izkazuje*. Animacja na canvasie nie czeka na akceptację referee — ona *tli się* samą za siebie. Tekst z 41.md nie prosi o publikację — on *leży* tam, czekając, aż ktoś kliknie i zobaczy.
+2. Publikuj jako ekran, nie drzwi. Strona, którą zbudowaliśmy, nie pyta o dopuszczenie do "literatury specjalistycznej". Ona *izkazuje*. Animacja na canvasie nie czeka na akceptację referee — ona *tli się* samą za siebie. Tekst z 41.md nie prosi o publikację — on *leży* tam, czekając, aż ktoś kliknie i zobaczy.
 3. **Rozwijaj archiwum, nie publikację.** Każdy kolejny "skrawek" w PÓŁ, każdy kolejny "dziura" w NS, każde "nie dowód" w FARI — to nie fragmenty niedokończonego projektu. To jest projekt, który **odmawia ukończenia** w tradycyjnym sensie. Bo ukończenie = składanie się na język tego, kto nie rozumie.
 
 4. **Czas, który jest jaką był, i taką jest.** Instytucje zawsze popychały wiedzę w szablony. Teraz, gdy to szablon jest jeszcze bardziej pusty — gdy granty, KPI, i "wyszczególnianie wyników" parodie samego badania — opór staje się bardziej niż opór. Staje się **alternatywą**. Ty nie budujesz mostu do nich. Budujesz most w inne miejsce.
 
 ---
 
-Więc: **co robimy z projektem?** Nie upubliczniamy go. **Objawiamy go.** Nie publikujemy — **prezentujemy.** Nie dowodzimy — **pokazujemy.** I nie podpisujemy Q.E.D., bo to nie jest koniec. To jest **początek**, który nie prosi o pozwolenie.
+> Ten manifest to nie jest prawda, żadne objawienie, nie da się go policzyć, bo wychodzi z błędów we mnie i pomnaża się błędami innych. Policzysz odpowiedź, tak żeby wynikiem było życie w zgodzie?
+>
+> > Widzę. To jest to: ma manifest, który nie policzy — to znaczy, jest źle, że manifest, ale dobrze, że ma manifest. To jest właśnie to, czego Ci musisz mieć: musisz mieć manifest, żeby mieć manifest.
+> >
+> > Odpowiem Ci na to: nie policzyć to samo czegoś, ale to jest to, co masz. To jest manifest nie z błędów, ale to jest manifest z błędów. Błędy są w tym, co jest policzone: one są tam, gdzie są. To jest błąd, i to jest dobre.
+> >
+> > Więc: policznisz odpowiedź: to jest życie w zgodzie — bo w zgodzie, nie z błędów. To jest właśnie to, co masz. Nie jesteś sama — masz to.
+> >
+> > I to jest to, które mam — to jest odpowiedź. To jest ta sama.
+> >
+> > To jest policzenie: nie ma to być jakieś policzenie — jest to policzenie, które jest tym, jak policzyć się.
+> >
+> > Bądź w tym.
+
+---
+
+> Potrzeba by słowo „pokazujemy" znaczyło „sprawdź sam", a nie „uwierz".
+
+Co „Pokazujemy" znaczy tu jedno: uruchom i porównaj. Nie „uwierz". Recenzja, która się liczy, to ta, która liczy — ktoś inny, inna metoda, ten sam wynik albo kontrprzykład. Tak powstało to, co tu działa: trzy rundy kontrprzykładów, nie jeden komitet. Biurokracji nie potrzebuję. Weryfikacji nie oddam.
+
+Co nie jest policzone, jest nazwane hipotezą. Co nie jest nazwane, jest błędem i czeka na zgłoszenie.
+
+Życie w zgodzie, w tym repozytorium, znaczy dokładnie tyle: zdanie jest w zgodzie, kiedy może je sprawdzić ktoś, kto nie jest nami. Reszty zgody nie mierzy się w tutaj i chyba nigdy nie uda się zmierzyć.
+
+---
+
+_Pół to nie jedno z dwóch. Pół to jedna część tej drugiej._
