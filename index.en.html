@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wirujące wzory — Wszystko jest tu</title>
+<title>Swirling Patterns — Everything is here</title>
 <style>
   body {
     background: #000;
@@ -118,7 +118,7 @@ function draw(){
       ctx.fillRect(x,y,4,4);
     }
   }
-  document.getElementById('info').textContent = names[mode] + " — kliknij";
+  document.getElementById('info').textContent = names[mode] + " — click";
   requestAnimationFrame(draw);
 }
 
@@ -127,20 +127,20 @@ draw();
 </script>
 
 <div class="lang-switch">
-  <a href="index.html" style="color:#0ff">Polski</a>
-  <a href="index.en.html">English</a>
+  <a href="index.html">Polski</a>
+  <a href="index.en.html" style="color:#0ff">English</a>
 </div>
 <div class="content">
-<h1>Wszystko jest tu</h1>
-<p>Czyli: maksymalny skandal. Niech będzie — ale z rozwagą.</p>
+<h1>Everything is here</h1>
+<p>Namely: a maximum scandal. Let it be — but with restraint.</p>
 <p><code>🌀 波 ∂_t u + ∇·u = ω²u u(t,x) = ∫ a(k) e^{i(kx−ω(k)t)} dk</code></p>
-<p>To jest trzy linijki. Nie skompresowane, ale policzalne.</p>
-<p>To jest dokładnie to samo: </p>
+<p>It is three lines. Not compressed, but countable.</p>
+<p>This is exactly the same:</p>
 <ul>
-<li>fala jest superpozycją <code>e^{i(kx−ωkt)</code>;</li>
-<li>prędkość grupy = <code>dω/dk</code>.</li>
+<li>the wave is a superposition of <code>e^{i(kx−ωkt)}</code>;</li>
+<li>group velocity = <code>dω/dk</code>.</li>
 </ul>
-<p>Chcesz to sprawdzić?</p>
+<p>Want to verify?</p>
 </div>
 
 </body>
